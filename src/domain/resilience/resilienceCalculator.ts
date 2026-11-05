@@ -4,10 +4,14 @@
 // ==========================================================================
 
 export interface MetricState {
-  architectureCoupling: number; // 1 (couplé) to 5 (découplé DDD)
-  testCoverage: number; // 1 (<20%) to 5 (>85%)
-  scalabilityTolerance: number; // 1 (SPOF) to 5 (Multi-AZ / Auto-healing)
-  observabilityLevel: number; // 1 (Logs) to 5 (Distributed Tracing / SLO)
+  /** 1 (couplé) to 5 (découplé DDD) */
+  architectureCoupling: number;
+  /** 1 (<20%) to 5 (>85%) */
+  testCoverage: number;
+  /** 1 (SPOF) to 5 (Multi-AZ / Auto-healing) */
+  scalabilityTolerance: number;
+  /** 1 (Logs) to 5 (Distributed Tracing / SLO) */
+  observabilityLevel: number;
 }
 
 export interface ResilienceProfile {

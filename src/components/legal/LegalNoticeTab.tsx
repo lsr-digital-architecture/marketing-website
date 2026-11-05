@@ -10,9 +10,9 @@ export const LegalNoticeTab: React.FC = () => {
           1. Éditeur de la plateforme
         </h3>
         <p>
-          Conformément aux dispositions de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
-          confiance dans l'économie numérique (LCEN), il est précisé aux utilisateurs du site
-          l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
+          Conformément aux dispositions de l’article 6 de la loi n° 2004-575 du 21 juin 2004 pour la
+          confiance dans l’économie numérique (LCEN), il est précisé aux utilisateurs du site
+          l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :
         </p>
         <div className="mt-3 p-4 rounded bg-[#131926] border border-white/[0.06] font-mono text-xs space-y-1.5 text-[#E2E8F0]">
           <p>
@@ -105,14 +105,14 @@ export const LegalNoticeTab: React.FC = () => {
           3. Propriété intellectuelle
         </h3>
         <p>
-          L'ensemble des éléments graphiques, schémas d'architecture, logos, marques, textes et code
+          L’ensemble des éléments graphiques, schémas d’architecture, logos, marques, textes et code
           source composant ce site internet sont la propriété exclusive de{' '}
           <strong>LSR Digital Architecture SASU</strong>, au titre des droits de propriété
           intellectuelle.
         </p>
         <p className="mt-2">
           Toute reproduction, distribution, modification, adaptation, retransmission ou publication,
-          même partielle, de ces différents éléments est strictement interdite sans l'accord exprès
+          même partielle, de ces différents éléments est strictement interdite sans l’accord exprès
           par écrit de LSR Digital Architecture.
         </p>
       </div>
@@ -125,7 +125,7 @@ export const LegalNoticeTab: React.FC = () => {
         <p>
           LSR Digital Architecture met en œuvre tous les moyens dont elle dispose pour assurer une
           information fiable et une mise à jour régulière de son site. Toutefois, des erreurs ou
-          omissions peuvent survenir. L'internaute devra donc s'assurer de l'exactitude des
+          omissions peuvent survenir. L’internaute devra donc s’assurer de l’exactitude des
           informations auprès de notre équipe technique.
         </p>
       </div>

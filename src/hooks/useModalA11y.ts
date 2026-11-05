@@ -52,22 +52,22 @@ export const useModalA11y = ({
       }
 
       if (e.key === 'Tab' && containerRef.current) {
-        const focusable = containerRef.current.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR);
+        const focusable = [
+          ...containerRef.current.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR),
+        ];
         if (focusable.length === 0) return;
 
         const firstElement = focusable[0];
-        const lastElement = focusable[focusable.length - 1];
+        const lastElement = focusable.at(-1);
 
         if (e.shiftKey) {
           if (document.activeElement === firstElement) {
             e.preventDefault();
-            lastElement.focus();
+            lastElement?.focus();
           }
-        } else {
-          if (document.activeElement === lastElement) {
-            e.preventDefault();
-            firstElement.focus();
-          }
+        } else if (document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement.focus();
         }
       }
     };

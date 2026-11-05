@@ -41,7 +41,7 @@ export const PrivacyPolicyTab: React.FC = () => {
           3. Données collectées & Finalités
         </h3>
         <p>
-          Les données susceptibles d'être collectées sur ce site sont celles transmises
+          Les données susceptibles d’être collectées sur ce site sont celles transmises
           volontairement via le formulaire de contact :
         </p>
         <ul className="list-disc list-inside mt-2 space-y-1 text-xs text-[#E2E8F0]">
@@ -52,18 +52,18 @@ export const PrivacyPolicyTab: React.FC = () => {
             <strong>Coordonnées :</strong> Adresse email professionnelle.
           </li>
           <li>
-            <strong>Contexte d'entreprise :</strong> Nom de la structure, type de projet et
+            <strong>Contexte d’entreprise :</strong> Nom de la structure, type de projet et
             description technique.
           </li>
         </ul>
         <p className="mt-3">
           <strong>Finalité :</strong> Ces données sont collectées exclusivement dans le but de
-          répondre à vos demandes de prise de contact, de cadrage d'architecture logicielle, d'audit
+          répondre à vos demandes de prise de contact, de cadrage d’architecture logicielle, d’audit
           technique ou de devis précontractuel.
         </p>
         <p className="mt-1">
           <strong>Base légale :</strong> Le traitement repose sur votre consentement explicite
-          (Article 6.1.a du RGPD) lors de la soumission du formulaire et sur l'intérêt légitime de
+          (Article 6.1.a du RGPD) lors de la soumission du formulaire et sur l’intérêt légitime de
           gérer notre relation B2B.
         </p>
       </div>
@@ -83,23 +83,23 @@ export const PrivacyPolicyTab: React.FC = () => {
       <div>
         <h3 className="text-base font-heading font-semibold text-[#F8FAFC] mb-2 flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-          5. Vos droits et modalités d'exercice
+          5. Vos droits et modalités d’exercice
         </h3>
         <p>Conformément aux articles 15 à 22 du RGPD, vous disposez des droits suivants :</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3 font-mono text-xs">
           <div className="p-2.5 rounded bg-[#131926] border border-white/[0.05]">
             <span className="text-[#38BDF8] font-bold block mb-0.5">
-              Droit d'accès & rectification
+              Droit d’accès & rectification
             </span>
             <span>Consulter et corriger vos informations à tout moment.</span>
           </div>
           <div className="p-2.5 rounded bg-[#131926] border border-white/[0.05]">
-            <span className="text-[#38BDF8] font-bold block mb-0.5">Droit à l'effacement</span>
-            <span>Demander la suppression complète de vos données (droit à l'oubli).</span>
+            <span className="text-[#38BDF8] font-bold block mb-0.5">Droit à l’effacement</span>
+            <span>Demander la suppression complète de vos données (droit à l’oubli).</span>
           </div>
           <div className="p-2.5 rounded bg-[#131926] border border-white/[0.05]">
             <span className="text-[#38BDF8] font-bold block mb-0.5">
-              Droit d'opposition & limitation
+              Droit d’opposition & limitation
             </span>
             <span>Refuser ou restreindre le traitement de vos données.</span>
           </div>
@@ -109,7 +109,7 @@ export const PrivacyPolicyTab: React.FC = () => {
           </div>
         </div>
         <p className="mt-4">
-          Pour faire valoir l'un de ces droits, il vous suffit de nous adresser une demande par
+          Pour faire valoir l’un de ces droits, il vous suffit de nous adresser une demande par
           email à :{' '}
           <a
             href="mailto:contact@lsr-digital-architecture.com"
@@ -121,8 +121,8 @@ export const PrivacyPolicyTab: React.FC = () => {
         </p>
         <p className="mt-2 text-xs text-[#64748B]">
           Si vous estimez, après nous avoir contactés, que vos droits ne sont pas respectés, vous
-          avez le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de
-          l'Informatique et des Libertés) :{' '}
+          avez le droit d’introduire une réclamation auprès de la CNIL (Commission Nationale de
+          l’Informatique et des Libertés) :{' '}
           <a
             href="https://www.cnil.fr"
             target="_blank"

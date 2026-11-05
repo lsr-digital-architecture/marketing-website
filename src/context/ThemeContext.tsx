@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ThemeContext, type Theme } from './themeContextCore';
 
 const THEME_STORAGE_KEY = 'lsr_theme_preference';
@@ -8,11 +8,11 @@ const applyTheme = (newTheme: Theme) => {
   if (newTheme === 'light') {
     root.classList.remove('dark');
     root.classList.add('light');
-    root.setAttribute('data-theme', 'light');
+    root.dataset.theme = 'light';
   } else {
     root.classList.remove('light');
     root.classList.add('dark');
-    root.setAttribute('data-theme', 'dark');
+    root.dataset.theme = 'dark';
   }
 
   // Update meta tags for browser and mobile theme
@@ -45,17 +45,15 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     setThemeState((prev) => (prev === 'light' ? 'dark' : 'light'));
-  };
+  }, []);
 
-  const setTheme = (newTheme: Theme) => {
+  const setTheme = useCallback((newTheme: Theme) => {
     setThemeState(newTheme);
-  };
+  }, []);
 
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  const value = useMemo(() => ({ theme, toggleTheme, setTheme }), [theme, toggleTheme, setTheme]);
+
+  return <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>;
 };

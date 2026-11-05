@@ -60,10 +60,11 @@ export const LegalModal: React.FC<LegalModalProps> = ({
       }}
       className="px-4 sm:px-6 md:px-10"
     >
-      {/* Backdrop */}
-      <div
+      <button
+        type="button"
+        aria-label="Fermer la fenêtre"
         onClick={onClose}
-        className="absolute inset-0 bg-[#090A0F]/85 backdrop-blur-md transition-opacity"
+        className="absolute inset-0 bg-[#090A0F]/85 backdrop-blur-md transition-opacity border-0 cursor-pointer"
       />
 
       {/* Modal Card */}

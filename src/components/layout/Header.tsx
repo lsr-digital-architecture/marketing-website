@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
       // Simple scrollspy
       const sections = navigation.map((item) => item.id);
       for (const sectionId of sections.toReversed()) {
-        const el = document.getElementById(sectionId);
+        const el = document.querySelector(`#${sectionId}`);
         if (el) {
           const rect = el.getBoundingClientRect();
           if (rect.top <= 200) {

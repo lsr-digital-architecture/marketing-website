@@ -19,7 +19,7 @@ export const MethodologySection: React.FC = () => {
             {sectionTitle}
           </h2>
           <p className="text-base sm:text-lg text-[#94A3B8] leading-relaxed">
-            Chaque projet suit un pipeline rigoureux, garantissant l'alignement strict entre
+            Chaque projet suit un pipeline rigoureux, garantissant l’alignement strict entre
             exigences métier et robustesse logicielle.
           </p>
         </div>

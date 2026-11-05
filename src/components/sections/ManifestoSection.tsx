@@ -31,7 +31,7 @@ export const ManifestoSection: React.FC = () => {
           <div className="flex items-center gap-3 pt-6 border-t border-white/10">
             <div className="w-2.5 h-2.5 bg-[#F59E0B] rounded-full animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-widest text-[#94A3B8]">
-              LSR DIGITAL ARCHITECTURE — MANIFESTE D'INGÉNIERIE & ÉTHIQUE LOGICIELLE
+              LSR DIGITAL ARCHITECTURE — MANIFESTE D’INGÉNIERIE & ÉTHIQUE LOGICIELLE
             </span>
           </div>
         </div>

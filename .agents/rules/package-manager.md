@@ -7,4 +7,4 @@
   - Add dev dependency: `pnpm add -D <pkg>`
   - Run dev server: `pnpm dev`
   - Run build: `pnpm build`
-  - Run checks: `pnpm typecheck`, `pnpm lint`, `pnpm format:check`
+  - Run checks: `pnpm check:all` (or individually: `pnpm typecheck`, `pnpm lint`, `pnpm format:check`)
