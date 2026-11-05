@@ -130,15 +130,15 @@ pnpm preview
 
 Hébergement **Firebase Hosting** (multi-site) sur le projet GCP/Firebase `lsr-digital-architecture`, déployé via **GitHub Actions** + **Workload Identity Federation** (même SA que les autres frontends).
 
-| Élément | Valeur |
-|--------|--------|
-| Firebase / GCP project | `lsr-digital-architecture` |
-| Hosting target | `www` (alias CI) |
-| Hosting site ID | `lsr-digital-architecture` (site par défaut du projet, mappé sur le target `www`) |
-| Domaine (apex personnel) | `www.lsr-digital-architecture.com` |
-| Domaine marque (optionnel) | `lsr-digital-architecture.com` (déjà ou à rattacher au site par défaut) |
-| WIF provider | `projects/344658308078/locations/global/workloadIdentityPools/github-pool/providers/github-provider` |
-| Service account | `github-deployer@lsr-digital-architecture.iam.gserviceaccount.com` |
+| Élément                    | Valeur                                                                                               |
+| -------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Firebase / GCP project     | `lsr-digital-architecture`                                                                           |
+| Hosting target             | `www` (alias CI)                                                                                     |
+| Hosting site ID            | `lsr-digital-architecture` (site par défaut du projet, mappé sur le target `www`)                    |
+| Domaine (apex personnel)   | `www.lsr-digital-architecture.com`                                                                   |
+| Domaine marque (optionnel) | `lsr-digital-architecture.com` (déjà ou à rattacher au site par défaut)                              |
+| WIF provider               | `projects/344658308078/locations/global/workloadIdentityPools/github-pool/providers/github-provider` |
+| Service account            | `github-deployer@lsr-digital-architecture.iam.gserviceaccount.com`                                   |
 
 ### Pipeline
 
@@ -156,12 +156,12 @@ Aucun secret GitHub n'est requis pour l'auth (WIF). Le dépôt GitHub doit être
 
 Cartographie multi-site (même apex `lsr-digital-architecture.com`) :
 
-| Subdomain | App | Cible |
-|-----------|-----|-------|
-| `www` | marketing-website | Firebase Hosting site `lsr-digital-architecture` (target `www`) |
-| `cv` | curriculum-vitae | Firebase Hosting site `lsr-cv` |
-| `tools` | tools-webapp frontend | Firebase Hosting site `lsr-tools-webapp` |
-| `api` | tools-webapp backend | Cloud Run `tools-api` |
+| Subdomain | App                   | Cible                                                           |
+| --------- | --------------------- | --------------------------------------------------------------- |
+| `www`     | marketing-website     | Firebase Hosting site `lsr-digital-architecture` (target `www`) |
+| `cv`      | curriculum-vitae      | Firebase Hosting site `lsr-cv`                                  |
+| `tools`   | tools-webapp frontend | Firebase Hosting site `lsr-tools-webapp`                        |
+| `api`     | tools-webapp backend  | Cloud Run `tools-api`                                           |
 
 ---
 
