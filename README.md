@@ -128,17 +128,40 @@ pnpm preview
 
 ## 🌐 Déploiement & Hébergement (Firebase & CI/CD)
 
-Le projet est hébergé sur **Firebase Hosting** avec déploiement continu via **GitHub Actions** :
+Hébergement **Firebase Hosting** (multi-site) sur le projet GCP/Firebase `lsr-digital-architecture`, déployé via **GitHub Actions** + **Workload Identity Federation** (même SA que les autres frontends).
 
-- **Canal de Production (`live`) :** Déploiement automatique lors d'un push sur la branche `main`.
-- **Canaux de Prévisualisation (`preview`) :** Déploiement automatique d'une URL de prévisualisation temporaire pour chaque Pull Request ouverte.
-- **Pipeline de Qualité :**
-  1. Validation des dépendances (`pnpm install --frozen-lockfile`)
-  2. Vérification statique des types (`pnpm typecheck`)
-  3. Analyse de linting (`pnpm lint`)
-  4. Vérification de formatage (`pnpm format:check`)
-  5. Compilation du bundle de production (`pnpm build`)
-  6. Déploiement sécurisé sans clé via **Workload Identity Federation (WIF)** (`google-github-actions/auth` + `firebase-tools`)
+| Élément | Valeur |
+|--------|--------|
+| Firebase / GCP project | `lsr-digital-architecture` |
+| Hosting target | `www` (alias CI) |
+| Hosting site ID | `lsr-digital-architecture` (site par défaut du projet, mappé sur le target `www`) |
+| Domaine (apex personnel) | `www.loghan-ramassamy.fr` |
+| Domaine marque (optionnel) | `lsr-digital-architecture.com` (déjà ou à rattacher au site par défaut) |
+| WIF provider | `projects/344658308078/locations/global/workloadIdentityPools/github-pool/providers/github-provider` |
+| Service account | `github-deployer@lsr-digital-architecture.iam.gserviceaccount.com` |
+
+### Pipeline
+
+- **PR →** preview channel Firebase (`hosting:channel:deploy`, target `www`, expire 7j)
+- **Push `main` →** live deploy (`firebase deploy --only hosting:www`)
+- Qualité : `pnpm check:all` puis `pnpm build`
+
+Aucun secret GitHub n'est requis pour l'auth (WIF). Le dépôt GitHub doit être autorisé sur le provider WIF / le SA `github-deployer`.
+
+### Ops checklist (console / CLI, une fois)
+
+1. Confirmer le mapping target `www` → site `lsr-digital-architecture` (déjà dans `.firebaserc`)
+2. Attacher `www.loghan-ramassamy.fr` (et garder `lsr-digital-architecture.com` si déjà en place) au site par défaut
+3. Vérifier les bindings WIF pour ce repo GitHub
+
+Cartographie multi-site (même apex `loghan-ramassamy.fr`) :
+
+| Subdomain | App | Cible |
+|-----------|-----|-------|
+| `www` | marketing-website | Firebase Hosting site `lsr-digital-architecture` (target `www`) |
+| `cv` | curriculum-vitae | Firebase Hosting site `cv` |
+| `tools` | tools-webapp frontend | Firebase Hosting site `tools` |
+| `api` | tools-webapp backend | Cloud Run `tools-api` |
 
 ---
 

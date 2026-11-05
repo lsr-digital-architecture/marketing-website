@@ -38,14 +38,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Typecheck
-        run: pnpm typecheck
-
-      - name: Lint
-        run: pnpm lint
-
-      - name: Check code formatting
-        run: pnpm format:check
+      - name: Quality gate
+        run: pnpm check:all
 
       - name: Build production bundle
         run: pnpm build
@@ -62,13 +56,18 @@ jobs:
       - name: Deploy preview to Firebase Hosting (Pull Request)
         if: github.event_name == 'pull_request'
         run: |
-          npx --yes firebase-tools hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" --project lsr-digital-architecture --expires 7d
+          npx --yes firebase-tools hosting:channel:deploy "pr-${{ github.event.pull_request.number }}" \
+            --only www \
+            --project lsr-digital-architecture \
+            --expires 7d
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
 
       - name: Deploy to Firebase Hosting (Live)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          npx --yes firebase-tools deploy --only hosting --project lsr-digital-architecture --non-interactive
+          npx --yes firebase-tools deploy --only hosting:www \
+            --project lsr-digital-architecture \
+            --non-interactive
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
