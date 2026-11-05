@@ -107,7 +107,8 @@ export function getResilienceProfile(score: number): ResilienceProfile {
       bgColor: 'bg-emerald-400/10',
       borderColor: 'border-emerald-400/30',
       risk: 'Faible risque de régression lors des montées en charge',
-      recommendation: 'Audit d’optimisation fine des coûts et accélération des cycles de release.',
+      recommendation:
+        'Optimisation fine des coûts cloud et accélération des cycles de release sur les parcours financiers.',
     };
   }
 
@@ -117,9 +118,9 @@ export function getResilienceProfile(score: number): ResilienceProfile {
       color: 'text-[#38BDF8]',
       bgColor: 'bg-[#38BDF8]/10',
       borderColor: 'border-[#38BDF8]/30',
-      risk: 'Goulets d’étranglement identifiés lors des pics de trafic',
+      risk: 'Goulets d’étranglement identifiés sur les flux transactionnels',
       recommendation:
-        'Mise en place d’un DAT, découplage asynchrone et introduction de Clean Architecture.',
+        'Mise en place d’un DAT finance, découplage asynchrone et Clean Architecture sur le domaine métier.',
     };
   }
 
@@ -128,7 +129,7 @@ export function getResilienceProfile(score: number): ResilienceProfile {
     color: 'text-amber-400',
     bgColor: 'bg-amber-400/10',
     borderColor: 'border-amber-400/30',
-    risk: 'Vulnérabilité aux pannes en cascade et vélocité d’équipe bridée',
+    risk: 'Vulnérabilité aux pannes en cascade sur parcours critiques finance',
     recommendation:
       'Audit d’urgence prioritaire et refonte ciblée du domaine sans interruption de service.',
   };

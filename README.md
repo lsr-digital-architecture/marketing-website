@@ -1,7 +1,7 @@
-# LSR Digital Architecture — Vitrine d'Ingénierie & Systèmes Résilients
+# LSR Digital Architecture — Vitrine d'Ingénierie Finance & Fintech
 
 > **Site vitrine officiel de LSR Digital Architecture SAS**  
-> Conception sur-mesure d'architectures logicielles pérennes, scalables et haute résilience.
+> Conception sur-mesure d'architectures logicielles pour environnements financiers — transactionnelles, conformes et haute résilience.
 
 ---
 

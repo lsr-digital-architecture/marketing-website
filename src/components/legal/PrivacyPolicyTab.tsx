@@ -58,8 +58,8 @@ export const PrivacyPolicyTab: React.FC = () => {
         </ul>
         <p className="mt-3">
           <strong>Finalité :</strong> Ces données sont collectées exclusivement dans le but de
-          répondre à vos demandes de prise de contact, de cadrage d’architecture logicielle, d’audit
-          technique ou de devis précontractuel.
+          répondre à vos demandes de prise de contact, de cadrage d’architecture logicielle finance,
+          d’audit technique ou de devis précontractuel.
         </p>
         <p className="mt-1">
           <strong>Base légale :</strong> Le traitement repose sur votre consentement explicite

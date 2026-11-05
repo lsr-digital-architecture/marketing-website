@@ -22,10 +22,10 @@ export const FooterStandards: React.FC<FooterStandardsProps> = ({ onOpenLegal })
         </div>
         <div className="footer-standards__content">
           <div className="footer-standards__meta">
-            <span className="footer-standards__name">Clean Architecture</span>
+            <span className="footer-standards__name">Finance-Ready Arch</span>
             <span className="footer-standards__tag footer-standards__tag--cyan">DDD</span>
           </div>
-          <span className="footer-standards__desc">Découplage strict & Zéro dette</span>
+          <span className="footer-standards__desc">Intégrité transactionnelle & zéro dette</span>
         </div>
       </div>
 

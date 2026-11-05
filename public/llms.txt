@@ -1,8 +1,8 @@
 # LSR Digital Architecture
 
-> Société d'ingénierie et de conseil en architecture logicielle haute résilience. Conception sur-mesure d'applications web pérennes, de socles distribués scalables et audit de code pour systèmes critiques.
+> Société d'ingénierie et de conseil en architecture logicielle dédiée à la finance et à la fintech. Conception d'applications transactionnelles pérennes, de socles distribués scalables et audit de code pour systèmes financiers critiques.
 
-LSR Digital Architecture accompagne les DSI, CTO, fondateurs tech et équipes d'ingénierie dans la conception, la modernisation et la stabilisation d'infrastructures applicatives critiques. Basée en Île-de-France et intervenant à distance comme sur site.
+LSR Digital Architecture accompagne les DSI, CTO, asset managers, banques et fintechs dans la conception, la modernisation et la stabilisation d'infrastructures applicatives financières. Basée en Île-de-France et intervenant à distance comme sur site.
 
 - **Site officiel** : https://lsr-digital-architecture.com
 - **Email de contact** : contact@lsr-digital-architecture.com
@@ -15,35 +15,35 @@ LSR Digital Architecture accompagne les DSI, CTO, fondateurs tech et équipes d'
 - **N° TVA Intracommunautaire** : FR64107484230
 - **Code NAF / APE** : 62.01Z (Programmation informatique)
 - **Président** : Loghan Ramassamy
-- **Disponibilité** : Projets Q4 2026 / 2027
+- **Positionnement** : Missions d'ingénierie logicielle Finance & Fintech
 
 ## Expertises Fondamentales
 
-- **Clean Architecture & Hexagonale** : Isolation du domaine métier, inversion de dépendances, testabilité totale sans effets de bord.
-- **Domain-Driven Design (DDD)** : Bounded contexts, Event Storming, modèles de domaine riches et contrats d'interfaces stricts.
-- **Systèmes Distribués & Event-Driven** : Architectures orientées événements, streaming, flux asynchrones, tolérance aux pannes (circuit breakers, outbox pattern).
-- **Haute Résilience & Zéro Dette** : SLA 99.99%, profilage de latence p99 (< 50ms), conception de plans de reprise d'activité (PRA).
+- **Clean Architecture & Hexagonale** : Isolation du domaine métier finance, inversion de dépendances, testabilité totale sans effets de bord.
+- **Domain-Driven Design (DDD)** : Bounded contexts (ordre, cash, reporting, conformité), Event Storming, modèles de domaine riches et contrats d'interfaces stricts.
+- **Systèmes Transactionnels & Event-Driven** : Architectures orientées événements, flux asynchrones, intégrité des données et tolérance aux pannes (circuit breakers, outbox pattern).
+- **Haute Résilience & Traçabilité** : SLA 99.99%, profilage de latence p99 (< 50ms), journaux d'audit et plans de reprise d'activité (PRA).
 
 ## Offres de Services
 
-1. **Conception & Architecture Système**
+1. **Architecture de Systèmes Financiers**
    - Schémas directeurs & Dossiers d'Architecture Technique (DAT)
-   - Cartographie DDD & modélisation des flux de données
+   - Cartographie DDD & modélisation des flux transactionnels
    - Stratégies de scalabilité horizontale et haute disponibilité
 
-2. **Ingénierie Web Full-Stack & Systèmes Critiques**
-   - Applications web métier complexes et portails sécurisés
-   - Back-ends transactionnels haute performance (APIs REST, GraphQL, gRPC)
+2. **Ingénierie Full-Stack Finance**
+   - Back-offices, portails métier et interfaces de pilotage
+   - APIs transactionnelles sécurisées et auditables (REST, GraphQL, gRPC)
    - Stacks : TypeScript, Node.js / Bun, Java Spring Boot, React, Next.js, PostgreSQL
 
-3. **Audit Technique & Refactorisation**
+3. **Audit Technique & Remédiation**
    - Diagnostic chirurgical de la dette technique, performance et sécurité
    - Plan de migration étape par étape (Strangler Fig pattern, zéro coupure)
    - Optimisation p99, pipelines CI/CD et durcissement d'infrastructure
 
 ## Méthode en 4 Étapes
 
-1. **01. Audit & Cartographie** : Analyse des flux opérationnels, contraintes de charge et points de fragilité existants.
+1. **01. Audit & Cartographie** : Analyse des flux métier finance, contraintes réglementaires et points de fragilité existants.
 2. **02. Blueprint Cible** : Élaboration du schéma directeur, découpage en bounded contexts et contrats d'API stricts.
 3. **03. Façonnage & Tests** : Développement guidé par les tests (TDD), Clean Architecture et typage exhaustif.
 4. **04. Déploiement & PRA** : Mise en production sécurisée, observabilité fine (métriques, logs, traces) et passation d'équipe.
@@ -53,4 +53,3 @@ LSR Digital Architecture accompagne les DSI, CTO, fondateurs tech et équipes d'
 - [Documentation Complète pour LLM (llms-full.txt)](https://lsr-digital-architecture.com/llms-full.txt) : Spécifications détaillées, métriques et manifeste d'ingénierie.
 - [Glossaire Technique & Méthodologique](https://lsr-digital-architecture.com/#glossaire) : Référentiel complet des définitions (Clean Architecture, DDD, Latence p99, PRA, SPOF, Craftsmanship, DAT, RGPD, etc.).
 - [Sitemap XML](https://lsr-digital-architecture.com/sitemap.xml) : Index des URLs et ressources du site.
-

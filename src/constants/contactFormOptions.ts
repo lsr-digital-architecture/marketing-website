@@ -1,23 +1,23 @@
 export const PROJECT_TYPE_OPTIONS = [
   {
-    value: 'Architecture & Conception Système',
-    label: 'Architecture & DAT',
-    desc: 'DAT, DDD, Résilience & Cloud',
+    value: 'Architecture Systèmes Financiers',
+    label: 'Architecture Finance',
+    desc: 'DAT, DDD, flux transactionnels & Cloud',
   },
   {
-    value: 'Ingénierie Web Full-Stack',
-    label: 'Dév Web Critique',
-    desc: 'Applications web sur-mesure & APIs transactionnelles',
+    value: 'Ingénierie Full-Stack Finance',
+    label: 'Dév Full-Stack Finance',
+    desc: 'Back-office, APIs métier & interfaces de pilotage',
   },
   {
     value: 'Audit & Performance',
     label: 'Audit & Dette Tech',
-    desc: 'Refactorisation & Élimination de dette',
+    desc: 'Refactorisation & fiabilisation de plateforme',
   },
   {
     value: 'Consultation ponctuelle',
     label: 'Cadrage Ponctuel',
-    desc: "Revue de code & cadrage d'infrastructure",
+    desc: 'Revue de code & cadrage d’architecture finance',
   },
   {
     value: 'Je souhaite simplement être accompagné sur mon projet',

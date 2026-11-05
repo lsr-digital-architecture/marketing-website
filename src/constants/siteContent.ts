@@ -2,14 +2,14 @@ import { SiteContent } from '../types';
 
 export const siteContent: SiteContent = {
   meta: {
-    title: 'LSR Digital Architecture — Ingénierie logicielle & Architectures web haute résilience',
+    title: 'LSR Digital Architecture — Ingénierie logicielle pour la Finance & la Fintech',
     description:
-      "Société d'ingénierie et de conseil en architecture logicielle. Conception sur-mesure d'applications web robustes, scalables et taillées pour les environnements critiques.",
+      "Société d'ingénierie et de conseil en architecture logicielle dédiée aux environnements financiers. Conception d'applications transactionnelles robustes, conformes et taillées pour les flux critiques.",
   },
   header: {
     brandName: 'LSR',
     brandSuffix: 'Digital Architecture',
-    statusBadge: 'DISPONIBLE POUR PROJETS Q4 2026',
+    statusBadge: 'MISSIONS FINANCE & FINTECH',
     navigation: [
       { id: 'vision', label: '01. Approche' },
       { id: 'services', label: '02. Savoir-faire' },
@@ -20,69 +20,69 @@ export const siteContent: SiteContent = {
     cta: 'Initier un échange',
   },
   hero: {
-    systemTag: '[ ARCHITECTURE LOGICIELLE & INGÉNIERIE SYSTÈME ]',
-    headline: 'Architectures web haute résilience,',
-    headlineAccent: 'conçues pour durer.',
+    systemTag: '[ INGÉNIERIE LOGICIELLE — FINANCE & FINTECH ]',
+    headline: 'Systèmes financiers fiables,',
+    headlineAccent: 'architectures conçues pour durer.',
     subheadline:
-      'Conception de socles techniques critiques et de systèmes distribués. Alliez Clean Architecture, haute performance et zéro dette technique.',
+      'Conception de socles techniques critiques pour banques, asset managers et fintechs. Alliez Clean Architecture, intégrité transactionnelle et zéro dette technique.',
     ctaPrimary: 'Explorer nos expertises',
     ctaSecondary: 'Consulter un architecte',
     metricsBanner: [
       {
         value: '99.99%',
-        title: 'Haute Résilience',
-        description: 'Tolérance aux pannes native et reprise automatique sans interruption.',
+        title: 'Continuité Opérationnelle',
+        description: 'Tolérance aux pannes native sur les parcours transactionnels et de back-office.',
       },
       {
         value: '< 50ms',
         title: 'Latence Maîtrisée',
-        description: 'Profilage p99 chirurgical, découplage et flux asynchrones.',
+        description: 'Profilage p99 chirurgical sur les flux financiers et APIs métier critiques.',
       },
       {
         value: '0 Dette',
-        title: 'Pérennité du Code',
-        description: 'Clean Architecture, typage strict et couverture de tests exhaustive.',
+        title: 'Conformité Durable',
+        description: 'Clean Architecture, typage strict et traçabilité adaptée aux exigences réglementaires.',
       },
     ],
   },
   services: {
     sectionTag: 'SERVICES & EXPERTISES',
-    sectionTitle: "Des solutions d'ingénierie ciblées pour les systèmes critiques",
+    sectionTitle: "Des solutions d'ingénierie ciblées pour les systèmes financiers",
     sectionDescription:
-      'Une approche pragmatique alliant vision globale du système et rigueur microscopique du code.',
+      'Une approche pragmatique alliant vision métier finance et rigueur microscopique du code.',
     cards: [
       {
         code: 'SEC_01 // ARCHITECTURE',
-        title: 'Conception & Architecture Système',
-        pitch: 'Socles applicatifs modulaires et évolutifs.',
+        title: 'Architecture de Systèmes Financiers',
+        pitch: 'Socles modulaires pour produits finance & fintech.',
         description:
-          "Plans directeurs (DAT), cartographie DDD et flux de données résilients pour garantir l'isolation des responsabilités.",
+          'Plans directeurs (DAT), cartographie DDD des domaines métier (ordre, cash, reporting, conformité) et flux de données résilients pour isoler les responsabilités critiques.',
         deliverables: [
           "Dossier d'Architecture Technique (DAT)",
-          'Cartographie DDD & flux de données',
+          'Cartographie DDD & flux transactionnels',
           'Stratégie de scalabilité & haute disponibilité',
         ],
-        tags: ['Clean Arch', 'DDD', 'Cloud Native', 'Event-Driven'],
+        tags: ['Clean Arch', 'DDD', 'Transactionnel', 'Event-Driven'],
       },
       {
         code: 'SEC_02 // CRAFTSMANSHIP',
-        title: 'Ingénierie Web Full-Stack',
-        pitch: 'Applications métier et APIs haute performance.',
+        title: 'Ingénierie Full-Stack Finance',
+        pitch: 'Applications métier et APIs haute fiabilité.',
         description:
-          "Conception sur-mesure d'applications critiques, du back-end transactionnel aux interfaces réactives.",
+          "Conception sur-mesure d'applications financières critiques, du back-end transactionnel aux interfaces de pilotage et de reporting.",
         deliverables: [
-          'Applications web sur-mesure & portails complexes',
-          'Back-ends transactionnels & APIs scalables',
+          'Portails métier & back-offices finance',
+          'APIs transactionnelles sécurisées & auditables',
           'Composants modulaires typés et testés',
         ],
         tags: ['TypeScript', 'Java / Spring', 'React / Next', 'PostgreSQL'],
       },
       {
         code: 'SEC_03 // RESILIENCE',
-        title: 'Audit Technique & Refactorisation',
+        title: 'Audit Technique & Remédiation',
         pitch: 'Élimination de dette et consolidation.',
         description:
-          "Diagnostic en profondeur, élimination des goulets d'étranglement et restructuration sans coupure de service.",
+          "Diagnostic en profondeur des plateformes financières, élimination des goulets d'étranglement et restructuration sans coupure de service.",
         deliverables: [
           'Audit de code, performance et couverture',
           'Plan de refactorisation étape par étape',
@@ -99,7 +99,7 @@ export const siteContent: SiteContent = {
       {
         step: '01',
         name: 'Audit & Cartographie',
-        description: 'Analyse des flux opérationnels, contraintes de charge et dette existante.',
+        description: 'Analyse des flux métier finance, contraintes réglementaires et dette existante.',
       },
       {
         step: '02',
@@ -120,26 +120,28 @@ export const siteContent: SiteContent = {
   },
   manifesto: {
     sectionTag: 'PHILOSOPHIE',
-    quote: '« Concevoir des architectures lisibles, robustes et taillées pour durer. »',
+    quote:
+      '« Concevoir des architectures financières lisibles, robustes et taillées pour durer. »',
     principles: [
       {
         title: 'Sobriété & Justesse',
-        text: 'Refus de la sur-ingénierie : la simplicité maîtrisée reste le garant ultime de la robustesse.',
+        text: 'Refus de la sur-ingénierie : la simplicité maîtrisée reste le garant ultime de la robustesse sur les parcours critiques.',
       },
       {
-        title: 'Rigueur des Contrats',
-        text: 'Typage strict et schémas immuables pour éliminer les régressions silencieuses.',
+        title: 'Intégrité & Traçabilité',
+        text: 'Typage strict, schémas immuables et journaux d’audit pour éliminer les régressions silencieuses.',
       },
       {
         title: 'Artisanat & Transmission',
-        text: 'Code propre, documenté et pensé pour être transmis sans friction.',
+        text: 'Code propre, documenté et pensé pour être transmis aux équipes métier et tech sans friction.',
       },
     ],
   },
   contact: {
     sectionTag: 'INITIALISATION',
-    headline: 'Prêt à consolider votre socle technique ?',
-    subheadline: "Échangeons sur vos enjeux d'architecture, d'audit ou de développement critique.",
+    headline: 'Prêt à consolider votre socle financier ?',
+    subheadline:
+      "Échangeons sur vos enjeux d'architecture, d'audit ou de développement en environnement finance / fintech.",
     email: 'contact@lsr-digital-architecture.com',
     directContact: {
       location: 'Conflans-Sainte-Honorine / Île-de-France & Remote',

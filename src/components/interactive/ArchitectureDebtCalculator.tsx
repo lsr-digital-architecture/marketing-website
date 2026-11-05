@@ -30,10 +30,10 @@ export const ArchitectureDebtCalculator: React.FC = () => {
         <div className="max-w-3xl mb-12">
           <SectionTag variant="cyan">OUTIL D’ÉVALUATION RAPIDE</SectionTag>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-[#F8FAFC] tracking-tight mb-3">
-            Simulateur d’Indice de Résilience Logicielle
+            Simulateur d’Indice de Résilience — Socles Finance
           </h2>
           <p className="text-sm sm:text-base text-[#94A3B8]">
-            Évaluez en 30 secondes l’état de solidité de votre socle technique et anticipez vos
+            Évaluez en 30 secondes la solidité de votre plateforme financière et anticipez vos
             besoins d’ingénierie.
           </p>
         </div>
