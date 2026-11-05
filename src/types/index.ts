@@ -82,6 +82,16 @@ export interface SiteContent {
     tagline?: string;
     copyright: string;
     email: string;
+    ecosystem: {
+      title: string;
+      links: Array<{
+        id: string;
+        label: string;
+        description: string;
+        href: string;
+        tag: string;
+      }>;
+    };
   };
 }
 

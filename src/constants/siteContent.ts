@@ -152,5 +152,24 @@ export const siteContent: SiteContent = {
     legalEntity: 'LSR Digital Architecture SASU',
     copyright: '© 2026 LSR Digital Architecture. Tous droits réservés.',
     email: 'contact@lsr-digital-architecture.com',
+    ecosystem: {
+      title: 'Écosystème LSR',
+      links: [
+        {
+          id: 'cv',
+          label: 'Curriculum Vitae',
+          description: 'Parcours, missions & stack technique',
+          href: 'https://cv.lsr-digital-architecture.com/',
+          tag: 'CV',
+        },
+        {
+          id: 'tools',
+          label: 'LSR Tools',
+          description: 'Raccourcisseur d’URL & utilitaires',
+          href: 'https://tools.lsr-digital-architecture.com/',
+          tag: 'TOOLS',
+        },
+      ],
+    },
   },
 };

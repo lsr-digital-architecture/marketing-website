@@ -2,6 +2,7 @@ import React from 'react';
 import { siteContent } from '../../constants/siteContent';
 import { ArrowUp } from 'lucide-react';
 import { Button } from '../common/Button';
+import { FooterEcosystem } from './FooterEcosystem';
 import { FooterStandards } from './FooterStandards';
 
 interface FooterProps {
@@ -48,7 +49,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenGlossary }) =
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10">
-          <div className="md:col-span-6 lg:col-span-4 space-y-3">
+          <div className="md:col-span-6 lg:col-span-3 space-y-3">
             <div className="flex items-center gap-2 text-[#F8FAFC]">
               <span className="font-heading font-extrabold text-base tracking-tight">
                 LSR <span className="font-light text-[#94A3B8]">Digital Architecture</span>
@@ -71,6 +72,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenGlossary }) =
                 </a>
               </div>
             </div>
+          </div>
+
+          <div className="md:col-span-6 lg:col-span-3 space-y-2">
+            <FooterEcosystem />
           </div>
 
           <div className="md:col-span-6 lg:col-span-2 space-y-2">
@@ -100,7 +105,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenGlossary }) =
             </div>
           </div>
 
-          <div className="md:col-span-6 lg:col-span-3 space-y-2">
+          <div className="md:col-span-6 lg:col-span-2 space-y-2">
             <span className="text-[11px] uppercase tracking-wider text-[#64748B] block mb-2 font-mono">
               Cadre Légal & RGPD
             </span>
@@ -129,7 +134,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegal, onOpenGlossary }) =
             </div>
           </div>
 
-          <div className="md:col-span-6 lg:col-span-3 space-y-2">
+          <div className="md:col-span-6 lg:col-span-2 space-y-2">
             <FooterStandards onOpenLegal={onOpenLegal} />
           </div>
         </div>
