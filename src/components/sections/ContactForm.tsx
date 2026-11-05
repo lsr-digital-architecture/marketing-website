@@ -78,8 +78,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onOpenLegal }) => {
             </h3>
             <p className="text-sm text-[#94A3B8] max-w-md mx-auto">
               Merci {formData.name}. Votre brief a été transmis à notre équipe d&apos;architecture
-              finance.
-              Nous reviendrons vers vous sous 48h ouvrées.
+              finance. Nous reviendrons vers vous sous 48h ouvrées.
             </p>
             <Button type="button" variant="secondary" size="sm" onClick={resetForm}>
               Envoyer un autre message

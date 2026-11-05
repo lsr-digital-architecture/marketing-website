@@ -31,7 +31,8 @@ export const siteContent: SiteContent = {
       {
         value: '99.99%',
         title: 'Continuité Opérationnelle',
-        description: 'Tolérance aux pannes native sur les parcours transactionnels et de back-office.',
+        description:
+          'Tolérance aux pannes native sur les parcours transactionnels et de back-office.',
       },
       {
         value: '< 50ms',
@@ -41,7 +42,8 @@ export const siteContent: SiteContent = {
       {
         value: '0 Dette',
         title: 'Conformité Durable',
-        description: 'Clean Architecture, typage strict et traçabilité adaptée aux exigences réglementaires.',
+        description:
+          'Clean Architecture, typage strict et traçabilité adaptée aux exigences réglementaires.',
       },
     ],
   },
@@ -99,7 +101,8 @@ export const siteContent: SiteContent = {
       {
         step: '01',
         name: 'Audit & Cartographie',
-        description: 'Analyse des flux métier finance, contraintes réglementaires et dette existante.',
+        description:
+          'Analyse des flux métier finance, contraintes réglementaires et dette existante.',
       },
       {
         step: '02',
@@ -120,8 +123,7 @@ export const siteContent: SiteContent = {
   },
   manifesto: {
     sectionTag: 'PHILOSOPHIE',
-    quote:
-      '« Concevoir des architectures financières lisibles, robustes et taillées pour durer. »',
+    quote: '« Concevoir des architectures financières lisibles, robustes et taillées pour durer. »',
     principles: [
       {
         title: 'Sobriété & Justesse',
