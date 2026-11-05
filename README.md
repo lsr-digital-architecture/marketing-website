@@ -135,7 +135,7 @@ Hébergement **Firebase Hosting** (multi-site) sur le projet GCP/Firebase `lsr-d
 | Firebase / GCP project | `lsr-digital-architecture` |
 | Hosting target | `www` (alias CI) |
 | Hosting site ID | `lsr-digital-architecture` (site par défaut du projet, mappé sur le target `www`) |
-| Domaine (apex personnel) | `www.loghan-ramassamy.fr` |
+| Domaine (apex personnel) | `www.lsr-digital-architecture.com` |
 | Domaine marque (optionnel) | `lsr-digital-architecture.com` (déjà ou à rattacher au site par défaut) |
 | WIF provider | `projects/344658308078/locations/global/workloadIdentityPools/github-pool/providers/github-provider` |
 | Service account | `github-deployer@lsr-digital-architecture.iam.gserviceaccount.com` |
@@ -151,16 +151,16 @@ Aucun secret GitHub n'est requis pour l'auth (WIF). Le dépôt GitHub doit être
 ### Ops checklist (console / CLI, une fois)
 
 1. Confirmer le mapping target `www` → site `lsr-digital-architecture` (déjà dans `.firebaserc`)
-2. Attacher `www.loghan-ramassamy.fr` (et garder `lsr-digital-architecture.com` si déjà en place) au site par défaut
+2. Attacher `www.lsr-digital-architecture.com` (et garder `lsr-digital-architecture.com` si déjà en place) au site par défaut
 3. Vérifier les bindings WIF pour ce repo GitHub
 
-Cartographie multi-site (même apex `loghan-ramassamy.fr`) :
+Cartographie multi-site (même apex `lsr-digital-architecture.com`) :
 
 | Subdomain | App | Cible |
 |-----------|-----|-------|
 | `www` | marketing-website | Firebase Hosting site `lsr-digital-architecture` (target `www`) |
-| `cv` | curriculum-vitae | Firebase Hosting site `cv` |
-| `tools` | tools-webapp frontend | Firebase Hosting site `tools` |
+| `cv` | curriculum-vitae | Firebase Hosting site `lsr-cv` |
+| `tools` | tools-webapp frontend | Firebase Hosting site `lsr-tools-webapp` |
 | `api` | tools-webapp backend | Cloud Run `tools-api` |
 
 ---
