@@ -9,7 +9,14 @@
       (function () {
         try {
           var saved = localStorage.getItem('lsr_theme_preference');
-          var theme = saved || 'light';
+          var preference =
+            saved === 'dark' || saved === 'light' || saved === 'system' ? saved : 'system';
+          var theme =
+            preference === 'system'
+              ? window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+              : preference;
           document.documentElement.classList.remove('dark', 'light');
           document.documentElement.classList.add(theme);
           document.documentElement.setAttribute('data-theme', theme);
