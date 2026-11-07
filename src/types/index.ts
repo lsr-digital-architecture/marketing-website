@@ -19,6 +19,11 @@ export interface ServiceCard {
   tags: string[];
 }
 
+export interface PainPoint {
+  title: string;
+  description: string;
+}
+
 export interface MethodologyStep {
   step: string;
   name: string;
@@ -28,6 +33,11 @@ export interface MethodologyStep {
 export interface ManifestoPrinciple {
   title: string;
   text: string;
+}
+
+export interface TrustBadge {
+  label: string;
+  hint: string;
 }
 
 export interface SiteContent {
@@ -51,11 +61,26 @@ export interface SiteContent {
     ctaSecondary: string;
     metricsBanner: MetricItem[];
   };
+  problemSolution: {
+    sectionTag: string;
+    sectionTitle: string;
+    sectionDescription: string;
+    pains: PainPoint[];
+    solutionTitle: string;
+    solutionDescription: string;
+    solutionPoints: string[];
+  };
   services: {
     sectionTag: string;
     sectionTitle: string;
     sectionDescription: string;
     cards: ServiceCard[];
+  };
+  trust: {
+    sectionTag: string;
+    sectionTitle: string;
+    sectionDescription: string;
+    badges: TrustBadge[];
   };
   methodology: {
     sectionTag: string;

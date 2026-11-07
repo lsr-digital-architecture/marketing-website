@@ -2,152 +2,227 @@ import { SiteContent } from '../types';
 
 export const siteContent: SiteContent = {
   meta: {
-    title: 'LSR Digital Architecture — Ingénierie logicielle pour la Finance & la Fintech',
+    title:
+      'LSR Digital Architecture — Développement Fintech, CGP & Conformité (ACPR / AMF)',
     description:
-      "Société d'ingénierie et de conseil en architecture logicielle dédiée aux environnements financiers. Conception d'applications transactionnelles robustes, conformes et taillées pour les flux critiques.",
+      'Développeur freelance senior & consultant tech spécialisé Fintech, CGP et Gestion de Patrimoine. Double compétence Code + Réglementation (ACPR, AMF, LCB-FT) pour moderniser vos outils métier sans friction conformité.',
   },
   header: {
     brandName: 'LSR',
     brandSuffix: 'Digital Architecture',
-    statusBadge: 'MISSIONS FINANCE & FINTECH',
+    statusBadge: 'FINTECH · CGP · CONFORMITÉ',
     navigation: [
       { id: 'vision', label: '01. Approche' },
-      { id: 'services', label: '02. Savoir-faire' },
-      { id: 'blueprint', label: '03. Méthode' },
-      { id: 'manifesto', label: '04. Philosophie' },
+      { id: 'enjeux', label: '02. Enjeux' },
+      { id: 'services', label: '03. Expertises' },
+      { id: 'confiance', label: '04. Conformité' },
       { id: 'contact', label: '05. Contact' },
     ],
-    cta: 'Initier un échange',
+    cta: 'Échanger sur votre projet',
   },
   hero: {
-    systemTag: '[ INGÉNIERIE LOGICIELLE — FINANCE & FINTECH ]',
-    headline: 'Systèmes financiers fiables,',
-    headlineAccent: 'architectures conçues pour durer.',
+    systemTag: '[ FINTECH · CGP · GESTION DE PATRIMOINE ]',
+    headline: 'Tech & régulation financière',
+    headlineAccent: 'sans friction.',
     subheadline:
-      'Conception de socles techniques critiques pour banques, asset managers et fintechs. Alliez Clean Architecture, intégrité transactionnelle et zéro dette technique.',
-    ctaPrimary: 'Explorer nos expertises',
-    ctaSecondary: 'Consulter un architecte',
+      '6+ ans en fintech et missions sur-mesure pour cabinets CGP. Je traduis les contraintes ACPR / AMF / LCB-FT en briques logicielles sécurisées — sans faire perdre de temps aux fondateurs ni aux responsables conformité.',
+    ctaPrimary: 'Échanger sur votre projet',
+    ctaSecondary: 'Audit de vos flux métier',
     metricsBanner: [
       {
-        value: '99.99%',
-        title: 'Continuité Opérationnelle',
+        value: '6+ ans',
+        title: 'Fintech & Patrimoine',
         description:
-          'Tolérance aux pannes native sur les parcours transactionnels et de back-office.',
+          'Parcours onboarding, souscription, moteurs patrimoniaux et back-offices CGP.',
       },
       {
-        value: '< 50ms',
-        title: 'Latence Maîtrisée',
-        description: 'Profilage p99 chirurgical sur les flux financiers et APIs métier critiques.',
+        value: 'Code + Régul.',
+        title: 'Double compétence rare',
+        description:
+          'ACPR, AMF, LCB-FT, MIFID II et DDA intégrés dès le premier commit — pas après coup.',
       },
       {
-        value: '0 Dette',
-        title: 'Conformité Durable',
+        value: 'J+1',
+        title: 'Opérationnel métier',
         description:
-          'Clean Architecture, typage strict et traçabilité adaptée aux exigences réglementaires.',
+          'PER, SCPI, adéquation MIFID II, audit trail : zéro formation générale à prévoir.',
       },
+    ],
+  },
+  problemSolution: {
+    sectionTag: 'PROBLÈME → SOLUTION',
+    sectionTitle: 'Ce qui coûte vraiment cher aux acteurs de la finance',
+    sectionDescription:
+      'Les délais et les amendes ne viennent pas du manque de développeurs. Ils viennent du décalage entre le code livré et le métier réglementé.',
+    pains: [
+      {
+        title: 'Risque de non-conformité',
+        description:
+          'Contrôles ACPR, failles LCB-FT, pistes d’audit incomplètes : une dette réglementaire invisible jusqu’au prochain examen — ou à la prochaine amende.',
+      },
+      {
+        title: 'Temps perdu en onboarding métier',
+        description:
+          'Former un développeur généraliste à ce qu’est un PER, une SCPI, un test d’adéquation MIFID II ou un gel des avoirs retarde chaque sprint et chaque livraison.',
+      },
+      {
+        title: 'Traduction conformité → produit',
+        description:
+          'Les fondateurs et RCCI passent des semaines à expliquer des contraintes que le code devrait déjà absorber. Chaque allers-retours est du ROI perdu.',
+      },
+    ],
+    solutionTitle: 'Un profil immédiatement opérationnel',
+    solutionDescription:
+      'Dès le premier commit : compréhension métier, cadrage réglementaire et implémentation sécurisée. Vous gardez la main sur le produit ; je porte la friction Code ↔ Conformité.',
+    solutionPoints: [
+      'Vocabulaire CGP / Fintech maîtrisé (KYC, PPE, DDA, DSP2, eIDAS…)',
+      'Exigences ACPR / AMF / TRACFIN traduites en règles et contrôles logiciels',
+      'Architecture traçable, idempotente et prête pour audit',
+      'Pas de « phase conformité » en fin de projet : elle est dans chaque livraison',
     ],
   },
   services: {
-    sectionTag: 'SERVICES & EXPERTISES',
-    sectionTitle: "Des solutions d'ingénierie ciblées pour les systèmes financiers",
+    sectionTag: 'BRIQUES D’EXPERTISE MÉTIER',
+    sectionTitle: 'Quatre piliers pour moderniser vos outils sans risque réglementaire',
     sectionDescription:
-      'Une approche pragmatique alliant vision métier finance et rigueur microscopique du code.',
+      'Des briques concrètes, prêtes à s’intégrer à votre stack — du parcours client à la piste d’audit.',
     cards: [
       {
-        code: 'SEC_01 // ARCHITECTURE',
-        title: 'Architecture de Systèmes Financiers',
-        pitch: 'Socles modulaires pour produits finance & fintech.',
+        code: 'SEC_01 // ONBOARDING',
+        title: 'Parcours Onboarding & Souscription',
+        pitch: 'KYC/KYB bout-en-bout, sans rupture conformité.',
         description:
-          'Plans directeurs (DAT), cartographie DDD des domaines métier (ordre, cash, reporting, conformité) et flux de données résilients pour isoler les responsabilités critiques.',
+          'Parcours d’entrée en relation et de souscription conçus pour la vitesse commerciale et la robustesse réglementaire : vérification de pièces, screening et signature eIDAS.',
         deliverables: [
-          "Dossier d'Architecture Technique (DAT)",
-          'Cartographie DDD & flux transactionnels',
-          'Stratégie de scalabilité & haute disponibilité',
+          'KYC / KYB & vérification documentaire',
+          'Screening PPE / Gel des avoirs',
+          'Signature électronique eIDAS',
         ],
-        tags: ['Clean Arch', 'DDD', 'Transactionnel', 'Event-Driven'],
+        tags: ['KYC', 'KYB', 'PPE', 'eIDAS', 'Souscription'],
       },
       {
-        code: 'SEC_02 // CRAFTSMANSHIP',
-        title: 'Ingénierie Full-Stack Finance',
-        pitch: 'Applications métier et APIs haute fiabilité.',
+        code: 'SEC_02 // CONFORMITÉ',
+        title: 'Conformité & Réglementation',
+        pitch: 'La régulation dans le produit, pas dans un PDF.',
         description:
-          "Conception sur-mesure d'applications financières critiques, du back-end transactionnel aux interfaces de pilotage et de reporting.",
+          'Implémentation des contrôles métier exigés par MIFID II, DDA et LCB-FT/TRACFIN, avec une trajectoire claire vers les exigences de résilience DORA.',
         deliverables: [
-          'Portails métier & back-offices finance',
-          'APIs transactionnelles sécurisées & auditables',
-          'Composants modulaires typés et testés',
+          'Contrôles MIFID II & DDA',
+          'Flux LCB-FT / TRACFIN',
+          'Préparation exigences DORA',
         ],
-        tags: ['TypeScript', 'Java / Spring', 'React / Next', 'PostgreSQL'],
+        tags: ['MIFID II', 'DDA', 'LCB-FT', 'TRACFIN', 'DORA'],
       },
       {
-        code: 'SEC_03 // RESILIENCE',
-        title: 'Audit Technique & Remédiation',
-        pitch: 'Élimination de dette et consolidation.',
+        code: 'SEC_03 // PATRIMOINE',
+        title: 'Moteurs de calcul & Patrimoine',
+        pitch: 'Chiffres justes, allocations actionnables.',
         description:
-          "Diagnostic en profondeur des plateformes financières, élimination des goulets d'étranglement et restructuration sans coupure de service.",
+          'Agrégation bancaire et patrimoniale (DSP2), simulateurs fiscaux / PER / Assurance-vie et moteurs d’allocation d’actifs pour cabinets CGP et fintechs patrimoine.',
         deliverables: [
-          'Audit de code, performance et couverture',
-          'Plan de refactorisation étape par étape',
-          'Optimisation des requêtes & pipelines CI/CD',
+          'Agrégation DSP2 & vision 360°',
+          'Simulateurs fiscaux / PER / AV',
+          'Allocation d’actifs & reporting',
         ],
-        tags: ['Code Review', 'Profiling p99', 'DevOps & CI/CD', 'Sécurité'],
+        tags: ['DSP2', 'PER', 'Assurance-vie', 'SCPI', 'Allocation'],
+      },
+      {
+        code: 'SEC_04 // SÉCURITÉ',
+        title: 'Architecture sécurisée',
+        pitch: 'Traçabilité financière digne d’un contrôle.',
+        description:
+          'Piste d’audit fiable, idempotence sur les opérations financières et chiffrement des données patrimoniales — pour tenir face aux audits et aux incidents.',
+        deliverables: [
+          'Audit trail complet & immutable',
+          'Idempotence financière',
+          'Chiffrement données patrimoniales',
+        ],
+        tags: ['Audit trail', 'Idempotence', 'Chiffrement', 'RGPD'],
+      },
+    ],
+  },
+  trust: {
+    sectionTag: 'PREUVE DE CONFIANCE',
+    sectionTitle: 'Des mots-clés que vos auditeurs et vos RCCI reconnaissent',
+    sectionDescription:
+      'Pas du marketing décoratif : des standards effectivement portés dans le code, les contrôles et la documentation livrable.',
+    badges: [
+      {
+        label: 'AMF Ready',
+        hint: 'Parcours & contrôles alignés sur les attentes AMF',
+      },
+      {
+        label: 'LCB-FT Compliant',
+        hint: 'Screening, vigilance et traçabilité TRACFIN',
+      },
+      {
+        label: 'MIFID II',
+        hint: 'Adéquation, information client, governance produit',
+      },
+      {
+        label: 'ACPR Standards',
+        hint: 'Gouvernance, contrôles internes, résilience',
       },
     ],
   },
   methodology: {
-    sectionTag: "MÉTHODE D'INGÉNIERIE",
-    sectionTitle: "L'exigence du plan, la rigueur de l'exécution",
+    sectionTag: 'MÉTHODE D’INTERVENTION',
+    sectionTitle: 'De l’audit des flux à la livraison conforme',
     steps: [
       {
         step: '01',
-        name: 'Audit & Cartographie',
+        name: 'Audit des flux métier',
         description:
-          'Analyse des flux métier finance, contraintes réglementaires et dette existante.',
+          'Cartographie onboarding, souscription, conformité et reporting — avec les points de friction réglementaires.',
       },
       {
         step: '02',
-        name: 'Blueprint Cible',
-        description: "Schéma directeur, découpage de domaine et validation des contrats d'APIs.",
+        name: 'Cadrage Code ↔ Régul.',
+        description:
+          'Traduction des exigences ACPR / AMF / LCB-FT en règles logicielles, contrats d’API et piste d’audit.',
       },
       {
         step: '03',
-        name: 'Façonnage & Tests',
-        description: 'Développement Clean Architecture, typage strict et tests automatisés.',
+        name: 'Livraison incrémentale',
+        description:
+          'Développement sur-mesure, tests métier, et contrôles conformité intégrés à chaque itération.',
       },
       {
         step: '04',
-        name: 'Déploiement & PRA',
-        description: 'Mise en production sécurisée, observabilité continue et passation.',
+        name: 'Passation & résilience',
+        description:
+          'Documentation exploitable, observabilité et préparation aux contrôles / exigences DORA.',
       },
     ],
   },
   manifesto: {
-    sectionTag: 'PHILOSOPHIE',
-    quote: '« Concevoir des architectures financières lisibles, robustes et taillées pour durer. »',
+    sectionTag: 'POSITIONNEMENT',
+    quote:
+      '« La conformité n’est pas un frein au produit. C’est une contrainte de conception — et je la code dès le premier commit. »',
     principles: [
       {
-        title: 'Sobriété & Justesse',
-        text: 'Refus de la sur-ingénierie : la simplicité maîtrisée reste le garant ultime de la robustesse sur les parcours critiques.',
+        title: 'ROI avant vanity tech',
+        text: 'Chaque brique sert un parcours métier ou un contrôle réglementaire. Pas de sur-ingénierie qui retarde la mise en production.',
       },
       {
-        title: 'Intégrité & Traçabilité',
-        text: 'Typage strict, schémas immuables et journaux d’audit pour éliminer les régressions silencieuses.',
+        title: 'Régulation dans le design',
+        text: 'MIFID II, LCB-FT, DDA, DORA : traités comme des invariants d’architecture, pas comme une checklist de fin de projet.',
       },
       {
-        title: 'Artisanat & Transmission',
-        text: 'Code propre, documenté et pensé pour être transmis aux équipes métier et tech sans friction.',
+        title: 'Transmission sans friction',
+        text: 'Code, audit trail et documentation pensés pour vos équipes tech, vos RCCI et vos prochains contrôles.',
       },
     ],
   },
   contact: {
-    sectionTag: 'INITIALISATION',
-    headline: 'Prêt à consolider votre socle financier ?',
+    sectionTag: 'PROCHAIN ÉCHANGE',
+    headline: 'Parlons de votre outil métier — et de sa conformité.',
     subheadline:
-      "Échangeons sur vos enjeux d'architecture, d'audit ou de développement en environnement finance / fintech.",
+      'CTO, CEO fintech, directeur de cabinet CGP ou courtier : un audit flash de vos flux ou un cadrage de modernisation sous 48h ouvrées.',
     email: 'contact@lsr-digital-architecture.com',
     directContact: {
       location: 'Conflans-Sainte-Honorine / Île-de-France & Remote',
-      availability: 'Consultation technique sous 48h ouvrées',
+      availability: 'Réponse sous 48h ouvrées',
     },
   },
   footer: {

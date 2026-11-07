@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
           {/* Hero CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <Button
-              href="#services"
+              href="#contact"
               variant="primary"
               size="lg"
               icon={<ArrowRight className="w-4 h-4" />}
@@ -62,7 +62,7 @@ export const HeroSection: React.FC = () => {
             </Button>
 
             <Button
-              href="#contact"
+              href="#enjeux"
               variant="secondary"
               size="lg"
               icon={<Terminal className="w-4 h-4 text-[#38BDF8]" />}

@@ -4,23 +4,30 @@ import { SectionTag } from '../common/SectionTag';
 import { BentoCard } from '../common/BentoCard';
 import { TechBadge } from '../common/TechBadge';
 import { Button } from '../common/Button';
-import { Layers, Code2, Cpu, CheckCircle, ChevronRight } from 'lucide-react';
+import {
+  UserCheck,
+  Scale,
+  LineChart,
+  Shield,
+  CheckCircle,
+  ChevronRight,
+  type LucideIcon,
+} from 'lucide-react';
+
+const CARD_ICONS: Record<string, LucideIcon> = {
+  'SEC_01 // ONBOARDING': UserCheck,
+  'SEC_02 // CONFORMITÉ': Scale,
+  'SEC_03 // PATRIMOINE': LineChart,
+  'SEC_04 // SÉCURITÉ': Shield,
+};
 
 export const ServicesSection: React.FC = () => {
   const { sectionTag, sectionTitle, sectionDescription, cards } = siteContent.services;
   const [activeCardCode, setActiveCardCode] = useState<string>(cards[0].code);
 
-  const cardIcons = {
-    'SEC_01 // ARCHITECTURE': Layers,
-    'SEC_02 // CRAFTSMANSHIP': Code2,
-    'SEC_03 // RESILIENCE': Cpu,
-  };
-
   return (
     <section id="services" className="py-24 relative bg-[#090A0F] border-t border-white/[0.08]">
-      {/* Decorative Blueprint Corner Markings */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        {/* Header */}
         <div className="max-w-3xl mb-16">
           <SectionTag variant="cyan">{sectionTag}</SectionTag>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-[#F8FAFC] tracking-tight mb-4">
@@ -31,12 +38,11 @@ export const ServicesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* 3 Bento Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {cards.map((card, idx) => {
-            const Icon = cardIcons[card.code as keyof typeof cardIcons] || Layers;
+            const Icon = CARD_ICONS[card.code] ?? Shield;
             const isSelected = activeCardCode === card.code;
-            const glowColor = idx === 0 ? 'blue' : idx === 1 ? 'cyan' : 'amber';
+            const glowColor = idx % 3 === 0 ? 'blue' : idx % 3 === 1 ? 'cyan' : 'amber';
 
             return (
               <div
@@ -68,13 +74,14 @@ export const ServicesSection: React.FC = () => {
                           {card.code}
                         </span>
                         <div className="p-2.5 rounded-lg bg-[#131926] border border-white/10 text-[#38BDF8]">
-                          <Icon className="w-5 h-5" />
+                          <Icon className="w-5 h-5" aria-hidden="true" />
                         </div>
                       </div>
 
-                      <h3 className="text-xl font-heading font-bold text-[#F8FAFC] mb-3 tracking-tight">
+                      <h3 className="text-xl font-heading font-bold text-[#F8FAFC] mb-2 tracking-tight">
                         {card.title}
                       </h3>
+                      <p className="text-sm font-medium text-[#38BDF8]/90 mb-3">{card.pitch}</p>
 
                       <p className="text-sm text-[#94A3B8] leading-relaxed mb-6">
                         {card.description}
@@ -89,7 +96,10 @@ export const ServicesSection: React.FC = () => {
                             key={item}
                             className="flex items-center gap-2 text-xs text-[#E2E8F0]"
                           >
-                            <CheckCircle className="w-3.5 h-3.5 text-[#38BDF8] shrink-0" />
+                            <CheckCircle
+                              className="w-3.5 h-3.5 text-[#38BDF8] shrink-0"
+                              aria-hidden="true"
+                            />
                             <span className="leading-snug">{item}</span>
                           </div>
                         ))}

@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { ThemeProvider } from './context/ThemeContext';
 import { Header } from './components/layout/Header';
 import { HeroSection } from './components/sections/HeroSection';
+import { ProblemSolutionSection } from './components/sections/ProblemSolutionSection';
 import { ServicesSection } from './components/sections/ServicesSection';
+import { TrustBannerSection } from './components/sections/TrustBannerSection';
 import { MethodologySection } from './components/sections/MethodologySection';
 import { ArchitectureDebtCalculator } from './components/interactive/ArchitectureDebtCalculator';
 import { ManifestoSection } from './components/sections/ManifestoSection';
@@ -74,7 +76,9 @@ export const AppContent: React.FC = () => {
       {/* Main Semantic Page Content */}
       <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
         <HeroSection />
+        <ProblemSolutionSection />
         <ServicesSection />
+        <TrustBannerSection />
         <MethodologySection />
         <ArchitectureDebtCalculator />
         <ManifestoSection />
