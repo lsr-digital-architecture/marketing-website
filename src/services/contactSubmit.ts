@@ -6,7 +6,15 @@ export type ContactSubmitResult = { ok: true } | { ok: false; message: string };
 const DEFAULT_ERROR =
   'Impossible d’envoyer votre message pour le moment. Réessayez ou écrivez-nous directement.';
 
+const ACTIVATION_HINT =
+  'La boîte contact@ doit encore activer FormSubmit : ouvrez le groupe Google Workspace, cherchez l’e-mail « Activate Form » (y compris spam), cliquez le lien, puis renvoyez votre message.';
+
 function buildPayload(data: ContactFormData) {
+  const pageUrl =
+    typeof window !== 'undefined' && window.location?.href
+      ? window.location.href
+      : 'https://www.lsr-digital-architecture.com/';
+
   return {
     name: data.name.trim(),
     email: data.email.trim(),
@@ -18,7 +26,18 @@ function buildPayload(data: ContactFormData) {
     _template: 'table',
     _captcha: 'false',
     _gotcha: '',
+    // Required by FormSubmit when Referrer-Policy is strict-origin-when-cross-origin
+    _url: pageUrl,
   };
+}
+
+function localizeSubmitMessage(raw: string | undefined): string {
+  if (!raw) return DEFAULT_ERROR;
+  if (/needs Activation|Activate Form/i.test(raw)) return ACTIVATION_HINT;
+  if (/web server|HTML files/i.test(raw)) {
+    return 'Envoi refusé par le service de messagerie. Rechargez la page depuis le site (pas un fichier local) et réessayez.';
+  }
+  return raw;
 }
 
 function parseSubmitBody(body: {
@@ -27,9 +46,11 @@ function parseSubmitBody(body: {
   error?: string;
 } | null): ContactSubmitResult {
   if (!body) return { ok: false, message: DEFAULT_ERROR };
-  if (body.error) return { ok: false, message: body.error };
+  if (body.error) return { ok: false, message: localizeSubmitMessage(body.error) };
   const success = body.success === true || body.success === 'true';
-  return success ? { ok: true } : { ok: false, message: body.message || DEFAULT_ERROR };
+  return success
+    ? { ok: true }
+    : { ok: false, message: localizeSubmitMessage(body.message) };
 }
 
 /** Delivers the form to the Google Workspace inbox via FormSubmit AJAX. */
@@ -45,7 +66,10 @@ export async function submitContactForm(data: ContactFormData): Promise<ContactS
     });
     const body = (await response.json().catch(() => null)) as Parameters<typeof parseSubmitBody>[0];
     if (!response.ok) {
-      return { ok: false, message: body?.message || body?.error || DEFAULT_ERROR };
+      return {
+        ok: false,
+        message: localizeSubmitMessage(body?.message || body?.error) || DEFAULT_ERROR,
+      };
     }
     return parseSubmitBody(body);
   } catch {
