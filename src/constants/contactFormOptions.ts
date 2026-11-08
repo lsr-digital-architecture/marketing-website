@@ -1,28 +1,28 @@
 export const PROJECT_TYPE_OPTIONS = [
   {
-    value: 'Architecture Systèmes Financiers',
-    label: 'Architecture Finance',
-    desc: 'DAT, DDD, flux transactionnels & Cloud',
+    value: 'Parcours Onboarding & Souscription',
+    label: 'Onboarding & Souscription',
+    desc: 'KYC / KYB, PPE, eIDAS & parcours de souscription',
   },
   {
-    value: 'Ingénierie Full-Stack Finance',
-    label: 'Dév Full-Stack Finance',
-    desc: 'Back-office, APIs métier & interfaces de pilotage',
+    value: 'Conformité & Réglementation',
+    label: 'Conformité & Réglementation',
+    desc: 'MIFID II, LCB-FT / TRACFIN, DORA, ACPR / AMF',
   },
   {
-    value: 'Audit & Performance',
-    label: 'Audit & Dette Tech',
-    desc: 'Refactorisation & fiabilisation de plateforme',
+    value: 'Moteurs de calcul & Patrimoine',
+    label: 'Moteurs & Patrimoine',
+    desc: 'DSP2, PER, Assurance-vie, SCPI & reporting',
   },
   {
-    value: 'Consultation ponctuelle',
-    label: 'Cadrage Ponctuel',
-    desc: 'Revue de code & cadrage d’architecture finance',
+    value: 'Architecture sécurisée',
+    label: 'Architecture sécurisée',
+    desc: 'Audit trail, idempotence & chiffrement patrimonial',
   },
   {
     value: 'Je souhaite simplement être accompagné sur mon projet',
     label: 'Je souhaite simplement être accompagné sur mon projet',
-    desc: 'Cadrage initial, audit du besoin et orientation technique sur-mesure',
+    desc: 'Cadrage initial, audit des flux métier et orientation sur-mesure',
     isFullWidth: true,
   },
 ] as const;

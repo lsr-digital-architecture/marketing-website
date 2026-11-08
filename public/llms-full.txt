@@ -41,41 +41,53 @@
 
 ## Catalogue Détaillé des Services
 
-### Service 1 : Architecture de Systèmes Financiers
-- **Objectif** : Poser des fondations solides pour les produits finance / fintech ou refondre des architectures vieillissantes.
-- **Livrables types** :
-  - Dossier d'Architecture Technique (DAT) exhaustif et fiches de décisions d'architecture (ADR).
-  - Cartographie Domain-Driven Design (DDD) avec découpage en contextes délimités (ordre, cash, reporting, conformité) et matrices de flux.
-  - Stratégie d'isolation des pannes, résilience système, scalabilité horizontale et haute disponibilité.
-- **Mots-clés / Domaines** : Clean Architecture, Architecture Hexagonale, DDD, Event-Driven Architecture, Transactionnel, Cloud Native.
+Quatre piliers alignés sur le site et le CV :
 
-### Service 2 : Ingénierie Full-Stack Finance
-- **Objectif** : Développer sur-mesure des back-offices, portails métier et APIs transactionnelles haute fiabilité.
+### Service 1 : Parcours Onboarding & Souscription
+- **Objectif** : KYC/KYB bout-en-bout, sans rupture conformité.
 - **Livrables types** :
-  - Applications web réactives, ergonomiques et conformes aux critères d'accessibilité (WCAG) et de performance (Core Web Vitals).
-  - APIs et micro-services sécurisés, scalables, typés et auditables (REST, GraphQL, gRPC).
-  - Composants front-end modulaires avec design system dédié et couverture de tests automatisée.
-- **Stack technique de prédilection (alignée CV)** :
-  - Finance & Conformité : KYC / KYB, KYD, LCB-FT, MIFID II, ACPR / AMF, RGPD, DORA, TRACFIN, CNIL, ANSSI
-  - Stack maîtresse : TypeScript, React, NextJS, Node.js, NestJS, GCP, JavaScript
-  - Autres : PHP, Rust, C#, Java, Python, SQL, C / C++, HTML / CSS, Bash
+  - KYC / KYB & vérification documentaire
+  - Screening PPE / Gel des avoirs
+  - Signature électronique eIDAS
+- **Mots-clés** : KYC, KYB, KYD, PPE, eIDAS, Souscription
 
-### Service 3 : Audit Technique & Remédiation
-- **Objectif** : Évaluer la viabilité d'une plateforme financière, identifier les goulets d'étranglement et planifier une modernisation sans arrêt de service.
+### Service 2 : Conformité & Réglementation
+- **Objectif** : Intégrer la régulation dans le produit (pas dans un PDF).
 - **Livrables types** :
-  - Rapport d'audit de santé logicielle : architecture, maintenabilité, performance (profiling p99), couverture de tests et vulnérabilités de sécurité.
-  - Feuille de route priorisée de refactorisation (matrice effort / impact business).
-  - Modernisation progressive via le patron Strangler Fig (étranglement du legacy sans coupure de production).
-- **Mots-clés** : Code Review, Profilage p99, Strangler Fig Pattern, Sécurité applicative (OWASP), Refactoring continu.
+  - Contrôles MIFID II & DDA
+  - Flux LCB-FT / TRACFIN
+  - Préparation exigences DORA
+- **Mots-clés** : MIFID II, DDA, LCB-FT, TRACFIN, DORA, ACPR, AMF
+
+### Service 3 : Moteurs de calcul & Patrimoine
+- **Objectif** : Chiffres justes et allocations actionnables pour CGP / fintechs patrimoine.
+- **Livrables types** :
+  - Agrégation DSP2 & vision 360°
+  - Simulateurs fiscaux / PER / Assurance-vie
+  - Allocation d’actifs & reporting
+- **Mots-clés** : DSP2, PER, Assurance-vie, SCPI, Allocation
+
+### Service 4 : Architecture sécurisée
+- **Objectif** : Traçabilité financière digne d’un contrôle.
+- **Livrables types** :
+  - Audit trail complet & immutable
+  - Idempotence financière
+  - Chiffrement données patrimoniales
+- **Mots-clés** : Audit trail, Idempotence, Chiffrement, RGPD, ANSSI
+
+### Stack technique (alignée CV)
+- Finance & Conformité : KYC / KYB, KYD, LCB-FT, MIFID II, ACPR / AMF, RGPD, DORA, TRACFIN, CNIL, ANSSI
+- Stack maîtresse : TypeScript, React, NextJS, Node.js, NestJS, GCP, JavaScript
+- Autres : PHP, Rust, C#, Java, Python, SQL, C / C++, HTML / CSS, Bash
 
 ---
 
 ## Méthodologie d'Exécution en 4 Phases
 
-1. **Étape 01 — Audit & Cartographie** : Immersion dans le domaine métier finance, analyse des flux actuels, contraintes réglementaires et dette technique existante.
-2. **Étape 02 — Blueprint Cible** : Co-construction de la cible architecturale, schémas directeurs, interfaces d'APIs et validation des critères de résilience.
-3. **Étape 03 — Façonnage & Tests** : Implémentation guidée par Clean Architecture, typage strict, TDD et revue de code rigoureuse.
-4. **Étape 04 — Déploiement & PRA** : Automatisation CI/CD, observabilité temps-réel (logs, métriques, alertes), validation du Plan de Reprise d'Activité et passation de connaissances.
+1. **Étape 01 — Audit des flux métier** : Cartographie onboarding, souscription, conformité et reporting — avec les points de friction réglementaires.
+2. **Étape 02 — Cadrage Code ↔ Régul.** : Traduction des exigences ACPR / AMF / LCB-FT en règles logicielles, contrats d’API et piste d’audit.
+3. **Étape 03 — Livraison incrémentale** : Développement sur-mesure, tests métier, et contrôles conformité intégrés à chaque itération.
+4. **Étape 04 — Passation & résilience** : Documentation exploitable, observabilité et préparation aux contrôles / exigences DORA.
 
 ---
 
