@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Send, CheckCircle, Terminal, ShieldCheck, Loader2 } from 'lucide-react';
+import { Send, CheckCircle, Terminal, ShieldCheck, Loader2, AlertCircle } from 'lucide-react';
 import { BentoCard } from '../common/BentoCard';
 import { Button } from '../common/Button';
 import { DEFAULT_PROJECT_TYPE, EMAIL_REGEX } from '../../constants/contactFormOptions';
+import { siteContent } from '../../constants/siteContent';
+import { submitContactForm } from '../../services/contactSubmit';
 import { ContactFormFields, type ContactFormData } from './ContactFormFields';
 
 interface ContactFormProps {
@@ -22,13 +24,16 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onOpenLegal }) => {
   const [rgpdError, setRgpdError] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const isNameValid = formData.name.trim().length >= 2;
   const isEmailValid = EMAIL_REGEX.test(formData.email.trim());
+  const contactEmail = siteContent.contact.email;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setTouched({ name: true, email: true });
+    setSubmitError(null);
 
     if (!isNameValid) {
       document.querySelector<HTMLElement>('#form-name')?.focus();
@@ -46,14 +51,21 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onOpenLegal }) => {
 
     setRgpdError(false);
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitted(true);
-    }, 600);
+
+    const result = await submitContactForm(formData);
+    setIsSubmitting(false);
+
+    if (!result.ok) {
+      setSubmitError(result.message);
+      return;
+    }
+
+    setSubmitted(true);
   };
 
   const resetForm = () => {
     setSubmitted(false);
+    setSubmitError(null);
     setFormData({
       name: '',
       email: '',
@@ -77,8 +89,9 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onOpenLegal }) => {
               Demande de consultation enregistrée
             </h3>
             <p className="text-sm text-[#94A3B8] max-w-md mx-auto">
-              Merci {formData.name}. Votre brief a été transmis à notre équipe d&apos;architecture
-              finance. Nous reviendrons vers vous sous 48h ouvrées.
+              Merci {formData.name}. Votre brief a été transmis à{' '}
+              <span className="font-mono text-[#E2E8F0]">{contactEmail}</span>. Nous reviendrons
+              vers vous sous 48h ouvrées.
             </p>
             <Button type="button" variant="secondary" size="sm" onClick={resetForm}>
               Envoyer un autre message
@@ -107,6 +120,28 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onOpenLegal }) => {
               setRgpdError={setRgpdError}
               onOpenLegal={onOpenLegal}
             />
+
+            {submitError && (
+              <div
+                className="flex items-start gap-2.5 rounded-lg border border-red-400/40 bg-red-500/10 px-3.5 py-3 text-sm text-red-200"
+                role="alert"
+              >
+                <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" aria-hidden="true" />
+                <div className="space-y-1">
+                  <p>{submitError}</p>
+                  <p className="text-xs text-red-200/80">
+                    Vous pouvez aussi écrire à{' '}
+                    <a
+                      href={`mailto:${contactEmail}`}
+                      className="font-mono underline hover:text-white"
+                    >
+                      {contactEmail}
+                    </a>
+                    .
+                  </p>
+                </div>
+              </div>
+            )}
 
             <Button
               type="submit"

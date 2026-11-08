@@ -66,6 +66,13 @@ export const PrivacyPolicyTab: React.FC = () => {
           (Article 6.1.a du RGPD) lors de la soumission du formulaire et sur l’intérêt légitime de
           gérer notre relation B2B.
         </p>
+        <p className="mt-3">
+          <strong>Acheminement :</strong> Les messages du formulaire sont transmis par e-mail vers
+          la boîte Google Workspace{' '}
+          <span className="font-mono text-[#38BDF8]">contact@lsr-digital-architecture.com</span> via
+          le service technique FormSubmit (sous-traitant limité à l’acheminement de la demande). Aucune
+          base marketing n’est constituée à partir de ces envois.
+        </p>
       </div>
 
       <div>
