@@ -9,14 +9,17 @@
 - **Immatriculation RCS** : 107 484 230 R.C.S. Versailles
 - **Numéro TVA Intracommunautaire** : FR64107484230
 - **Code APE / NAF** : 62.01Z (Programmation informatique)
-- **Président & Fondateur** : Loghan Ramassamy
-- **Activité** : Conseil en architecture logicielle et ingénierie full-stack dédiés à la finance et à la fintech — conception d'applications transactionnelles, audit technique et remédiation.
+- **Président & Fondateur** : Loghan Ramassamy — Développeur Full-Stack Fintech, CGP & Conformité
+- **Activité** : Développement Full-Stack et conseil tech spécialisé Fintech, CGP / Gestion de Patrimoine et Conformité (ACPR, AMF, LCB-FT, MIFID II, DORA).
 - **Siège social** : Conflans-Sainte-Honorine (78700), Yvelines, Île-de-France, France.
 - **Zone d'intervention** : France entière, Union Européenne, à distance (Remote) et sur site (On-site).
 - **Site web officiel** : https://lsr-digital-architecture.com
+- **Curriculum Vitae** : https://cv.lsr-digital-architecture.com
 - **Courriel de contact** : contact@lsr-digital-architecture.com
 - **Délai moyen de prise de contact / réponse** : Sous 48 heures ouvrées.
-- **Positionnement** : Missions d'ingénierie logicielle Finance & Fintech
+- **Disponibilité** : Freelance — En mission
+- **Parcours clé** : Astoria Finance (mission CGP en cours, Freelance) ; Tylia (2020–2026, 6 ans fintech, CDI)
+- **Positionnement** : Double compétence Code + Réglementation pour moderniser les outils métier sans friction conformité
 
 ---
 
@@ -52,11 +55,10 @@
   - Applications web réactives, ergonomiques et conformes aux critères d'accessibilité (WCAG) et de performance (Core Web Vitals).
   - APIs et micro-services sécurisés, scalables, typés et auditables (REST, GraphQL, gRPC).
   - Composants front-end modulaires avec design system dédié et couverture de tests automatisée.
-- **Stack technique de prédilection** :
-  - Langages : TypeScript, Java, SQL, Rust, Go.
-  - Frameworks & Runtimes : React, Next.js, Node.js, Bun, Spring Boot.
-  - Données & Stockage : PostgreSQL, Redis, Kafka, RabbitMQ.
-  - Cloud & DevOps : Docker, Kubernetes, Terraform, GitHub Actions, AWS, GCP, Scaleway.
+- **Stack technique de prédilection (alignée CV)** :
+  - Finance & Conformité : KYC / KYB, KYD, LCB-FT, MIFID II, ACPR / AMF, RGPD, DORA, TRACFIN, CNIL, ANSSI
+  - Stack maîtresse : TypeScript, React, NextJS, Node.js, NestJS, GCP, JavaScript
+  - Autres : PHP, Rust, C#, Java, Python, SQL, C / C++, HTML / CSS, Bash
 
 ### Service 3 : Audit Technique & Remédiation
 - **Objectif** : Évaluer la viabilité d'une plateforme financière, identifier les goulets d'étranglement et planifier une modernisation sans arrêt de service.

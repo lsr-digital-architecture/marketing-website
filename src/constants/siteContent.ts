@@ -5,47 +5,48 @@ export const siteContent: SiteContent = {
     title:
       'LSR Digital Architecture — Développement Fintech, CGP & Conformité (ACPR / AMF)',
     description:
-      'Développeur freelance senior & consultant tech spécialisé Fintech, CGP et Gestion de Patrimoine. Double compétence Code + Réglementation (ACPR, AMF, LCB-FT) pour moderniser vos outils métier sans friction conformité.',
+      'Développeur Full-Stack freelance — Fintech, CGP & Conformité. 6+ ans (Tylia), mission en cours chez Astoria Finance. Double compétence Code + Réglementation (ACPR, AMF, LCB-FT, MIFID II, DORA).',
   },
   header: {
     brandName: 'LSR',
     brandSuffix: 'Digital Architecture',
-    statusBadge: 'FINTECH · CGP · CONFORMITÉ',
+    statusBadge: 'EN MISSION · FINTECH · CGP',
     navigation: [
       { id: 'vision', label: '01. Approche' },
       { id: 'enjeux', label: '02. Enjeux' },
       { id: 'services', label: '03. Expertises' },
       { id: 'confiance', label: '04. Conformité' },
-      { id: 'contact', label: '05. Contact' },
+      { id: 'parcours', label: '05. Parcours' },
+      { id: 'contact', label: '06. Contact' },
     ],
     cta: 'Échanger sur votre projet',
   },
   hero: {
-    systemTag: '[ FINTECH · CGP · GESTION DE PATRIMOINE ]',
+    systemTag: '[ FINTECH · CGP · CONFORMITÉ — EN MISSION ]',
     headline: 'Tech & régulation financière',
     headlineAccent: 'sans friction.',
     subheadline:
-      '6+ ans en fintech et missions sur-mesure pour cabinets CGP. Je traduis les contraintes ACPR / AMF / LCB-FT en briques logicielles sécurisées — sans faire perdre de temps aux fondateurs ni aux responsables conformité.',
+      'Développeur Full-Stack freelance avec 6+ ans en fintech (Tylia) et missions CGP / patrimoine. Actuellement en mission chez Astoria Finance. Je traduis ACPR / AMF / LCB-FT / MIFID II / DORA en logiciels sécurisés — sans faire perdre de temps aux fondateurs ni aux responsables conformité.',
     ctaPrimary: 'Échanger sur votre projet',
     ctaSecondary: 'Audit de vos flux métier',
     metricsBanner: [
       {
         value: '6+ ans',
-        title: 'Fintech & Patrimoine',
+        title: 'Fintech (Tylia)',
         description:
-          'Parcours onboarding, souscription, moteurs patrimoniaux et back-offices CGP.',
+          'Systèmes transactionnels, APIs NestJS / TypeScript et plateformes en marque blanche sur GCP.',
+      },
+      {
+        value: 'Astoria',
+        title: 'Mission CGP en cours',
+        description:
+          'Outils métier patrimoine : onboarding, souscription, back-offices et contrôles conformité.',
       },
       {
         value: 'Code + Régul.',
         title: 'Double compétence rare',
         description:
-          'ACPR, AMF, LCB-FT, MIFID II et DDA intégrés dès le premier commit — pas après coup.',
-      },
-      {
-        value: 'J+1',
-        title: 'Opérationnel métier',
-        description:
-          'PER, SCPI, adéquation MIFID II, audit trail : zéro formation générale à prévoir.',
+          'KYC / KYB, LCB-FT, MIFID II, ACPR / AMF, RGPD, DORA — intégrés dès le premier commit.',
       },
     ],
   },
@@ -75,8 +76,8 @@ export const siteContent: SiteContent = {
     solutionDescription:
       'Dès le premier commit : compréhension métier, cadrage réglementaire et implémentation sécurisée. Vous gardez la main sur le produit ; je porte la friction Code ↔ Conformité.',
     solutionPoints: [
-      'Vocabulaire CGP / Fintech maîtrisé (KYC, PPE, DDA, DSP2, eIDAS…)',
-      'Exigences ACPR / AMF / TRACFIN traduites en règles et contrôles logiciels',
+      'Vocabulaire CGP / Fintech maîtrisé (KYC, KYB, KYD, PPE, DDA, DSP2, eIDAS…)',
+      'Exigences ACPR / AMF / TRACFIN / CNIL / ANSSI traduites en règles et contrôles logiciels',
       'Architecture traçable, idempotente et prête pour audit',
       'Pas de « phase conformité » en fin de projet : elle est dans chaque livraison',
     ],
@@ -98,7 +99,7 @@ export const siteContent: SiteContent = {
           'Screening PPE / Gel des avoirs',
           'Signature électronique eIDAS',
         ],
-        tags: ['KYC', 'KYB', 'PPE', 'eIDAS', 'Souscription'],
+        tags: ['KYC', 'KYB', 'KYD', 'PPE', 'eIDAS', 'Souscription'],
       },
       {
         code: 'SEC_02 // CONFORMITÉ',
@@ -111,7 +112,7 @@ export const siteContent: SiteContent = {
           'Flux LCB-FT / TRACFIN',
           'Préparation exigences DORA',
         ],
-        tags: ['MIFID II', 'DDA', 'LCB-FT', 'TRACFIN', 'DORA'],
+        tags: ['MIFID II', 'DDA', 'LCB-FT', 'TRACFIN', 'DORA', 'ACPR', 'AMF'],
       },
       {
         code: 'SEC_03 // PATRIMOINE',
@@ -137,7 +138,7 @@ export const siteContent: SiteContent = {
           'Idempotence financière',
           'Chiffrement données patrimoniales',
         ],
-        tags: ['Audit trail', 'Idempotence', 'Chiffrement', 'RGPD'],
+        tags: ['Audit trail', 'Idempotence', 'Chiffrement', 'RGPD', 'ANSSI'],
       },
     ],
   },
@@ -160,8 +161,75 @@ export const siteContent: SiteContent = {
         hint: 'Adéquation, information client, governance produit',
       },
       {
-        label: 'ACPR Standards',
-        hint: 'Gouvernance, contrôles internes, résilience',
+        label: 'ACPR · DORA · RGPD',
+        hint: 'Gouvernance, résilience opérationnelle et protection des données',
+      },
+    ],
+  },
+  trackRecord: {
+    sectionTag: 'PARCOURS & STACK',
+    sectionTitle: 'Ce que dit le CV — missions et compétences opérationnelles',
+    sectionDescription:
+      'Même contenu que le curriculum vitae : missions fintech / CGP et stack utilisée au quotidien.',
+    experiences: [
+      {
+        period: '2026 – Présent',
+        role: 'Développeur Full-Stack — Finance / CGP',
+        company: 'Astoria Finance',
+        contract: 'Freelance',
+        current: true,
+        blocks: [
+          {
+            title: 'Outils métier CGP & patrimoine',
+            body: "Développement sur-mesure pour cabinets CGP / gestion de patrimoine : parcours d'onboarding & souscription, back-offices métier et interfaces de pilotage. Vocabulaire métier maîtrisé (PER, SCPI, assurance-vie, adéquation).",
+          },
+          {
+            title: 'Conformité & traçabilité',
+            body: 'Intégration des contraintes ACPR / AMF / LCB-FT dans le produit : contrôles métier, piste d’audit fiable et livraisons compatibles avec les exigences de conformité — dès le premier commit.',
+          },
+        ],
+      },
+      {
+        period: '2020 – 2026 · 6 ans',
+        role: 'Développeur Full-Stack — Fintech',
+        company: 'Tylia',
+        contract: 'CDI',
+        current: false,
+        blocks: [
+          {
+            title: 'Plateformes fintech & APIs',
+            body: '6 ans sur des systèmes transactionnels et plateformes fintech en marque blanche : microservices et APIs modulaires sous Node.js, NestJS et TypeScript. Intégrité des flux, résilience cloud (GCP) et modélisation de données critiques.',
+          },
+          {
+            title: 'Produit & livraison continue',
+            body: "Développement d'interfaces métier, code reviews et rituels agiles pour livrer des fonctionnalités fiables en environnement financier exigeant.",
+          },
+        ],
+      },
+    ],
+    stack: [
+      {
+        label: 'Métier Finance & Conformité',
+        items: [
+          'KYC / KYB',
+          'KYD',
+          'LCB-FT',
+          'MIFID II',
+          'ACPR / AMF',
+          'RGPD',
+          'DORA',
+          'TRACFIN',
+          'CNIL',
+          'ANSSI',
+        ],
+      },
+      {
+        label: 'Stack maîtresse',
+        items: ['TypeScript', 'React', 'NextJS', 'Node.js', 'NestJS', 'GCP', 'JavaScript'],
+      },
+      {
+        label: 'Autres langages',
+        items: ['PHP', 'Rust', 'C#', 'Java', 'Python', 'SQL', 'C / C++', 'HTML / CSS', 'Bash'],
       },
     ],
   },
@@ -218,11 +286,11 @@ export const siteContent: SiteContent = {
     sectionTag: 'PROCHAIN ÉCHANGE',
     headline: 'Parlons de votre outil métier — et de sa conformité.',
     subheadline:
-      'CTO, CEO fintech, directeur de cabinet CGP ou courtier : un audit flash de vos flux ou un cadrage de modernisation sous 48h ouvrées.',
+      'CTO, CEO fintech, directeur de cabinet CGP ou courtier : un audit flash de vos flux ou un cadrage de modernisation sous 48h ouvrées. Profil Full-Stack Fintech / CGP, actuellement en mission.',
     email: 'contact@lsr-digital-architecture.com',
     directContact: {
-      location: 'Conflans-Sainte-Honorine / Île-de-France & Remote',
-      availability: 'Réponse sous 48h ouvrées',
+      location: 'Conflans-Sainte-Honorine, Yvelines — Île-de-France & Remote',
+      availability: 'Freelance — En mission · Réponse sous 48h ouvrées',
     },
   },
   footer: {
@@ -235,7 +303,7 @@ export const siteContent: SiteContent = {
         {
           id: 'cv',
           label: 'Curriculum Vitae',
-          description: 'Parcours, missions & stack technique',
+          description: 'Parcours Astoria / Tylia & stack technique',
           href: 'https://cv.lsr-digital-architecture.com/',
           tag: 'CV',
         },

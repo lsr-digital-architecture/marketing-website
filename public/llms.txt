@@ -1,55 +1,44 @@
 # LSR Digital Architecture
 
-> Société d'ingénierie et de conseil en architecture logicielle dédiée à la finance et à la fintech. Conception d'applications transactionnelles pérennes, de socles distribués scalables et audit de code pour systèmes financiers critiques.
+> Développeur Full-Stack freelance spécialisé Fintech, CGP & Conformité. Double compétence Code + Réglementation (ACPR, AMF, LCB-FT, MIFID II, DORA) pour moderniser les outils métier sans friction conformité.
 
-LSR Digital Architecture accompagne les DSI, CTO, asset managers, banques et fintechs dans la conception, la modernisation et la stabilisation d'infrastructures applicatives financières. Basée en Île-de-France et intervenant à distance comme sur site.
+LSR Digital Architecture accompagne CTO, CEO fintech, cabinets CGP et courtiers : parcours onboarding / souscription, contrôles réglementaires, moteurs patrimoniaux et architectures traçables. Basée à Conflans-Sainte-Honorine (Yvelines), intervention Île-de-France & remote.
 
 - **Site officiel** : https://lsr-digital-architecture.com
+- **CV** : https://cv.lsr-digital-architecture.com
 - **Email de contact** : contact@lsr-digital-architecture.com
-- **Siège social** : Conflans-Sainte-Honorine (78700), Île-de-France, France
-- **Forme juridique** : SASU (Société par Actions Simplifiée Unipersonnelle)
+- **Siège social** : Conflans-Sainte-Honorine (78700), Yvelines, Île-de-France, France
+- **Forme juridique** : SASU
 - **Capital social** : 2 000,00 €
 - **SIREN** : 107 484 230
 - **SIRET (siège)** : 107 484 230 00019
 - **RCS** : 107 484 230 R.C.S. Versailles
 - **N° TVA Intracommunautaire** : FR64107484230
 - **Code NAF / APE** : 62.01Z (Programmation informatique)
-- **Président** : Loghan Ramassamy
-- **Positionnement** : Missions d'ingénierie logicielle Finance & Fintech
+- **Président** : Loghan Ramassamy — Développeur Full-Stack Fintech, CGP & Conformité
+- **Disponibilité** : Freelance — En mission · Réponse sous 48h ouvrées
 
-## Expertises Fondamentales
+## Parcours (aligné CV)
 
-- **Clean Architecture & Hexagonale** : Isolation du domaine métier finance, inversion de dépendances, testabilité totale sans effets de bord.
-- **Domain-Driven Design (DDD)** : Bounded contexts (ordre, cash, reporting, conformité), Event Storming, modèles de domaine riches et contrats d'interfaces stricts.
-- **Systèmes Transactionnels & Event-Driven** : Architectures orientées événements, flux asynchrones, intégrité des données et tolérance aux pannes (circuit breakers, outbox pattern).
-- **Haute Résilience & Traçabilité** : SLA 99.99%, profilage de latence p99 (< 50ms), journaux d'audit et plans de reprise d'activité (PRA).
+- **Astoria Finance (2026 – Présent, Freelance)** : Outils métier CGP / patrimoine — onboarding, souscription, back-offices, contrôles ACPR / AMF / LCB-FT.
+- **Tylia (2020 – 2026, CDI)** : 6 ans fintech — plateformes marque blanche, microservices & APIs NestJS / TypeScript, résilience GCP.
 
-## Offres de Services
+## Expertises Métier
 
-1. **Architecture de Systèmes Financiers**
-   - Schémas directeurs & Dossiers d'Architecture Technique (DAT)
-   - Cartographie DDD & modélisation des flux transactionnels
-   - Stratégies de scalabilité horizontale et haute disponibilité
+- Parcours Onboarding & Souscription (KYC / KYB / KYD, PPE, eIDAS)
+- Conformité & Réglementation (MIFID II, DDA, LCB-FT / TRACFIN, DORA, ACPR / AMF)
+- Moteurs de calcul & Patrimoine (DSP2, PER, Assurance-vie, SCPI)
+- Architecture sécurisée (audit trail, idempotence, RGPD, ANSSI)
 
-2. **Ingénierie Full-Stack Finance**
-   - Back-offices, portails métier et interfaces de pilotage
-   - APIs transactionnelles sécurisées et auditables (REST, GraphQL, gRPC)
-   - Stacks : TypeScript, Node.js / Bun, Java Spring Boot, React, Next.js, PostgreSQL
+## Stack (alignée CV)
 
-3. **Audit Technique & Remédiation**
-   - Diagnostic chirurgical de la dette technique, performance et sécurité
-   - Plan de migration étape par étape (Strangler Fig pattern, zéro coupure)
-   - Optimisation p99, pipelines CI/CD et durcissement d'infrastructure
+- **Finance & Conformité** : KYC / KYB, KYD, LCB-FT, MIFID II, ACPR / AMF, RGPD, DORA, TRACFIN, CNIL, ANSSI
+- **Stack maîtresse** : TypeScript, React, NextJS, Node.js, NestJS, GCP, JavaScript
+- **Autres** : PHP, Rust, C#, Java, Python, SQL, C / C++, HTML / CSS, Bash
 
-## Méthode en 4 Étapes
+## Ressources
 
-1. **01. Audit & Cartographie** : Analyse des flux métier finance, contraintes réglementaires et points de fragilité existants.
-2. **02. Blueprint Cible** : Élaboration du schéma directeur, découpage en bounded contexts et contrats d'API stricts.
-3. **03. Façonnage & Tests** : Développement guidé par les tests (TDD), Clean Architecture et typage exhaustif.
-4. **04. Déploiement & PRA** : Mise en production sécurisée, observabilité fine (métriques, logs, traces) et passation d'équipe.
-
-## Ressources Complémentaires
-
-- [Documentation Complète pour LLM (llms-full.txt)](https://lsr-digital-architecture.com/llms-full.txt) : Spécifications détaillées, métriques et manifeste d'ingénierie.
-- [Glossaire Technique & Méthodologique](https://lsr-digital-architecture.com/#glossaire) : Référentiel complet des définitions (Clean Architecture, DDD, Latence p99, PRA, SPOF, Craftsmanship, DAT, RGPD, etc.).
-- [Sitemap XML](https://lsr-digital-architecture.com/sitemap.xml) : Index des URLs et ressources du site.
+- [Documentation complète (llms-full.txt)](https://lsr-digital-architecture.com/llms-full.txt)
+- [Curriculum Vitae](https://cv.lsr-digital-architecture.com/)
+- [Glossaire](https://lsr-digital-architecture.com/#glossaire)
+- [Sitemap](https://lsr-digital-architecture.com/sitemap.xml)

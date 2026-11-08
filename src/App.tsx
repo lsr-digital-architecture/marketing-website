@@ -5,6 +5,7 @@ import { HeroSection } from './components/sections/HeroSection';
 import { ProblemSolutionSection } from './components/sections/ProblemSolutionSection';
 import { ServicesSection } from './components/sections/ServicesSection';
 import { TrustBannerSection } from './components/sections/TrustBannerSection';
+import { TrackRecordSection } from './components/sections/TrackRecordSection';
 import { MethodologySection } from './components/sections/MethodologySection';
 import { ArchitectureDebtCalculator } from './components/interactive/ArchitectureDebtCalculator';
 import { ManifestoSection } from './components/sections/ManifestoSection';
@@ -79,6 +80,7 @@ export const AppContent: React.FC = () => {
         <ProblemSolutionSection />
         <ServicesSection />
         <TrustBannerSection />
+        <TrackRecordSection />
         <MethodologySection />
         <ArchitectureDebtCalculator />
         <ManifestoSection />

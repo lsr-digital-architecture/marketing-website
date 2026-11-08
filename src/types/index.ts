@@ -40,6 +40,25 @@ export interface TrustBadge {
   hint: string;
 }
 
+export interface ExperienceBlock {
+  title: string;
+  body: string;
+}
+
+export interface TrackRecordItem {
+  period: string;
+  role: string;
+  company: string;
+  contract: string;
+  current: boolean;
+  blocks: ExperienceBlock[];
+}
+
+export interface StackGroup {
+  label: string;
+  items: string[];
+}
+
 export interface SiteContent {
   meta: {
     title: string;
@@ -81,6 +100,13 @@ export interface SiteContent {
     sectionTitle: string;
     sectionDescription: string;
     badges: TrustBadge[];
+  };
+  trackRecord: {
+    sectionTag: string;
+    sectionTitle: string;
+    sectionDescription: string;
+    experiences: TrackRecordItem[];
+    stack: StackGroup[];
   };
   methodology: {
     sectionTag: string;
