@@ -26,9 +26,7 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className = '' }) => {
       role="group"
       aria-label="Choisir le thème"
       className={`inline-flex items-center gap-0.5 p-0.5 rounded-lg border transition-colors ${
-        isLight
-          ? 'bg-slate-100/80 border-slate-300/80'
-          : 'bg-[#0D111A] border-white/10'
+        isLight ? 'bg-slate-100/80 border-slate-300/80' : 'bg-[#0D111A] border-white/10'
       } ${className}`}
     >
       {OPTIONS.map(({ value, label, Icon }) => {

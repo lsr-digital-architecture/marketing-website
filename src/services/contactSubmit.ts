@@ -33,24 +33,24 @@ function buildPayload(data: ContactFormData) {
 
 function localizeSubmitMessage(raw: string | undefined): string {
   if (!raw) return DEFAULT_ERROR;
-  if (/needs Activation|Activate Form/i.test(raw)) return ACTIVATION_HINT;
-  if (/web server|HTML files/i.test(raw)) {
+  if (/needs Activation|Activate Form/iu.test(raw)) return ACTIVATION_HINT;
+  if (/web server|HTML files/iu.test(raw)) {
     return 'Envoi refusé par le service de messagerie. Rechargez la page depuis le site (pas un fichier local) et réessayez.';
   }
   return raw;
 }
 
-function parseSubmitBody(body: {
-  success?: string | boolean;
-  message?: string;
-  error?: string;
-} | null): ContactSubmitResult {
+function parseSubmitBody(
+  body: {
+    success?: string | boolean;
+    message?: string;
+    error?: string;
+  } | null
+): ContactSubmitResult {
   if (!body) return { ok: false, message: DEFAULT_ERROR };
   if (body.error) return { ok: false, message: localizeSubmitMessage(body.error) };
   const success = body.success === true || body.success === 'true';
-  return success
-    ? { ok: true }
-    : { ok: false, message: localizeSubmitMessage(body.message) };
+  return success ? { ok: true } : { ok: false, message: localizeSubmitMessage(body.message) };
 }
 
 /** Delivers the form to the Google Workspace inbox via FormSubmit AJAX. */

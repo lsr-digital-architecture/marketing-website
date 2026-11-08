@@ -70,8 +70,8 @@ export const PrivacyPolicyTab: React.FC = () => {
           <strong>Acheminement :</strong> Les messages du formulaire sont transmis par e-mail vers
           la boîte Google Workspace{' '}
           <span className="font-mono text-[#38BDF8]">contact@lsr-digital-architecture.com</span> via
-          le service technique FormSubmit (sous-traitant limité à l’acheminement de la demande). Aucune
-          base marketing n’est constituée à partir de ces envois.
+          le service technique FormSubmit (sous-traitant limité à l’acheminement de la demande).
+          Aucune base marketing n’est constituée à partir de ces envois.
         </p>
       </div>
 

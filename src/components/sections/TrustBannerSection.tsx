@@ -42,17 +42,12 @@ export const TrustBannerSection: React.FC = () => {
                 className="group flex flex-col gap-2 rounded-lg border border-white/[0.08] bg-[#090A0F]/50 px-4 py-4 transition-colors duration-200 hover:border-[#38BDF8]/35"
               >
                 <div className="flex items-center gap-2.5">
-                  <ShieldCheck
-                    className="w-4 h-4 text-[#38BDF8] shrink-0"
-                    aria-hidden="true"
-                  />
+                  <ShieldCheck className="w-4 h-4 text-[#38BDF8] shrink-0" aria-hidden="true" />
                   <span className="font-mono text-sm font-semibold tracking-wide text-[#F8FAFC] group-hover:text-[#38BDF8] transition-colors">
                     {badge.label}
                   </span>
                 </div>
-                <p className="text-xs text-[#94A3B8] leading-relaxed pl-7">
-                  {badge.hint}
-                </p>
+                <p className="text-xs text-[#94A3B8] leading-relaxed pl-7">{badge.hint}</p>
               </div>
             ))}
           </div>

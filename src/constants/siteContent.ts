@@ -2,8 +2,7 @@ import { SiteContent } from '../types';
 
 export const siteContent: SiteContent = {
   meta: {
-    title:
-      'LSR Digital Architecture — Développement Fintech, CGP & Conformité (ACPR / AMF)',
+    title: 'LSR Digital Architecture — Développement Fintech, CGP & Conformité (ACPR / AMF)',
     description:
       'Développeur Full-Stack freelance — Fintech, CGP & Conformité. 6+ ans (Tylia), mission en cours chez Astoria Finance. Double compétence Code + Réglementation (ACPR, AMF, LCB-FT, MIFID II, DORA).',
   },
